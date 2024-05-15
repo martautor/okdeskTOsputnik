@@ -1,7 +1,7 @@
 # Информация
 
 FullStack проект созданный при помощи Express и React.
-Целью проекта является перенос заявок с [https://okdesk.com/](OkDesk) в [https://www.rukovoditel.net.ru/](CRM Руководитель (Спутник))
+Целью проекта является перенос заявок с [OkDesk](https://okdesk.com/) в [CRM Руководитель (Спутник)](https://www.rukovoditel.net.ru/)
 
 ## Перед началом
 
