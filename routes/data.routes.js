@@ -1,7 +1,7 @@
 const {Router} = require('express')
 const router = Router()
 
-router.get('/start', async (req, res) => {
+router.get('start', async (req, res) => {
     try {
         
         res.status(200)

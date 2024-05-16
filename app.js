@@ -31,16 +31,24 @@ app.listen(PORT, () => {
     console.log(`Server is started on PORT ${PORT}`)
 })
 
+app.get('/api/test', async (req, res) => {
+    res.json({
+        message: 'Готов',
+        clr: 'gray'
+    })
+})
+app.use('/api/test', datas_routes)
+
 app.post('/api/start', async (req, res, next) => {
     const params = req.query
     let msg = '[Ошибка] '
-    if(params.firstId > parseInt(params.lastId)) {
+    if(parseInt(params.firstId) > parseInt(params.lastId)) {
         msg += 'Первое число не может быть больше второго.'
+        
         res.json({
             message: msg,
             color: 'red'
         })
-        throw new Error( msg)
     } else {
         try {
             console.log(await start(params.firstId, parseInt(params.lastId)))
@@ -67,7 +75,7 @@ app.use((error, req, res, next) => {
     })
 })
 async function start(firstID, lastID) {
-    // let status = ''
+
     async function active(bool = true) {
         
         const data = []

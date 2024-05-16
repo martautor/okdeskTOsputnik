@@ -1,18 +1,27 @@
 // import { useHttp } from "./hooks/http.hook";
 import TextField from '@mui/material/TextField';
 import React from 'react'
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 import Fetching from './fetching';
 import { Box, Button, Grid } from '@mui/material';
 // import hslog from './files/history.log.txt'
 
 function App() {
-
   const [firstValue, setFirstValue] = useState('')
   const [secondValue, setSecondValue] = useState('')
   const [Error, newError] = useState({msg:'', clr: 'red'})
   const [History, newHistory] = useState('')
-  const [Log, newLog] = useState({msg:'Готов', clr: 'grey'})
+  const [Log, newLog] = useState({msg:'', clr: ''})
+  
+  useEffect(() => {
+    async function getStatus() {
+      return await fetch(`http://192.168.0.9:5000/api/test/`)
+      .then(data => data.json())
+      .then(data => newLog({msg: data.message, clr: data.color}))
+    }
+    getStatus()
+  }, [])
+
   const handleChangeFirstValue = (e) => {
     setFirstValue(e.target.value)
     console.log(e.target.value)
@@ -24,13 +33,13 @@ function App() {
   const handleStart = async (e) => {
     console.log(parseInt(firstValue), parseInt(secondValue))
     // e.preventDefault()
-    newLog('Loading...')
+    newLog({msg: 'Loading...', clr: 'gray'})
     if(firstValue === '' || secondValue === '') {
-      newError(`\n[APP ERROR]  Поля должны быть заполнены цифрами.`)
+      newError({msg:`[APP ERROR]  Поля должны быть заполнены цифрами.`, clr: 'red'})
       return false
     }
     try {
-      newLog('Loading...')
+      newLog({msg: 'Loading...', clr: 'gray'})
       await Fetching(parseInt(firstValue), parseInt(secondValue))
       .then(res => res.json())
       .then(res => newLog({msg: res.message, clr: res.color}))
