@@ -4,7 +4,6 @@ const getCompanyId = require('./getCompanyId');
 const formatDate = require('./formatDate');
 const fs2 = require('fs');
 const logToFile = require('./logToFile');
-
 const date = formatDate(new Date())
 // const logTime = '['+ new Date().getHours() + ':' + new Date().getMinutes() + ':' + new Date().getSeconds() + ']'
 // const logToFile = msg => fs2.appendFileSync(`data/${date}log.txt`, `${logTime} - ${msg}\n`);
@@ -13,7 +12,10 @@ let msg = ''
 
 module.exports = async function Render(jsonF) {
     const json = await jsonF
-    
+    console.log(json)
+    if (typeof json === 'object') {
+        return logToFile(`[Ошибка] ${json.errors}`, true)
+    } 
     const params = {"key": process.env.SPUTNIK_API,"username": process.env.SPUTNIK_username,"password": process.env.SPUTNIK_password,"action": "insert",
         "entity_id": process.env.taskentityID, /// ID Сущности "Заявки"
         "items": {}}
@@ -21,10 +23,7 @@ module.exports = async function Render(jsonF) {
         "entity_id": process.env.timeentityID, /// ID Сущности "Время"
         "items": {"field_939": 15}}
     const getIt = await getCompanyId()
-    if(json['id'] === undefined) {
-        logToFile(`[Ошибка] Записи с данным OkDeskID не существует. Пропуск...`)
-        return new Error('OkDesk ID is undefined.')
-    } else if(json['company_id'] !== null && json['company_id'] !== undefined) {
+    if (json['company_id'] !== null && json['company_id'] !== undefined) {
         Object.keys(json).map((key) => {
             switch (key) {
                 case 'company_id':  params.items.parent_item_id = getIt[`${json[key]}`]
@@ -56,8 +55,10 @@ module.exports = async function Render(jsonF) {
         })
         logToFile(`Сущность с ID: ${json['id']} обработана на сервере.`)
         return startRender(params, timeParams)
+        // return `Сущность с ID: ${json['id']} обработана на сервере.`
     } else {
-        return logToFile(`[Ошибка] Не найдено ID клиента (OkDesk ID: ${json['id']}) Пропуск...`)
+        return logToFile(`[Ошибка] Не найдено ID клиента (OkDesk ID: ${json['id']}) Пропуск...`, true)
+        // new Error(`[Ошибка] Не найдено ID клиента (OkDesk ID: ${json['id']}) Пропуск...`)
     }
     async function startRender(p, tp) {
     

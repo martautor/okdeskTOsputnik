@@ -2,7 +2,7 @@
 require('dotenv').config()
 const getData = require('./functions/getData')
 const Render = require('./functions/render')
-
+const createError = require('http-errors')
 const fs1 = require('fs/promises')
 const fs2 = require('fs')
 const {constants} = require('fs')
@@ -13,8 +13,10 @@ const app = express()
 
 const datas_routes = require('./routes/data')
 const cors = require("cors");
+const { error } = require('console')
 
 app.use(cors());
+
 app.get('/api/getdata', (req, res) => {
     // start()
     res.json({
@@ -29,61 +31,82 @@ app.listen(PORT, () => {
     console.log(`Server is started on PORT ${PORT}`)
 })
 
-app.post('/api/start', async (req, res) => {
+app.post('/api/start', async (req, res, next) => {
     const params = req.query
-    if(params.firstId > params.lastId) {
-        return res.json({
-            message: 'Первое число не может быть больше второго.'
+    let msg = '[Ошибка] '
+    if(params.firstId > parseInt(params.lastId)) {
+        msg += 'Первое число не может быть больше второго.'
+        res.json({
+            message: msg,
+            color: 'red'
         })
+        throw new Error( msg)
     } else {
         try {
-            await start(params.firstId, parseInt(params.lastId))
-                .then(data => console.log(data))
-                .catch(e => console.error(e.message))
+            console.log(await start(params.firstId, parseInt(params.lastId)))
+            res.status(200)
             res.json({
                 message: 'Данные переданы на сервер.',
-                requestBody: [params],
-                log: `${params}: Данные переданы на сервер.`
+                color: 'green',
             })
         } catch (e) {
-            e => e.message
+            res.status(500)
             res.json({
-                message: 'Ошибка, проверьте локальные логи.',
-                requestBody: [params],
-                log: `${params}: ${e.message}`
+                message: e.message,
+                color: 'red',
+                requestBody: [params]
             })
         }
     }
 })
 app.use("/api/start", datas_routes)
-
+app.use((error, req, res, next) => {
+    res.status(error.status || 500)
+    res.json({
+        message: error.message
+    })
+})
 async function start(firstID, lastID) {
-    async function active(bool = false) {
+    // let status = ''
+    async function active(bool = true) {
+        
+        const data = []
+        
         for (let i = firstID; i < lastID+1; i++) {
-            if(bool === true) {
-                return data.push(await getData(i))
+            errorHandler = await getData(i)
+            if(errorHandler.errors !== undefined) {
+                logToFile(errorHandler.errors, true)
+                throw createError(400, '[Ошибка] ' + errorHandler.errors)
             }
-            return await Render(await getData(i))
-                .then(data => data === undefined ? new Error('data is undefined') : data)      
+            if(bool === false) {
+                data.push(await getData(i))
+                const jsonData = JSON.stringify(data)
+                fs2.writeFileSync(`data/okdesk/${firstID}-${lastID}data.json`, jsonData)
+            }
+            await Render(await getData(i))
+                .then(data => { if (data === undefined) {
+                    new Error('data is undefined')
+                } else {
+                    data
+                }
+            })    
         }
+        logToFile('Загрузка локальных данных закончена.') 
     }    
     logToFile(process.env.config)
     /////Проверка наличия файла, если файл есть - то ничего не делаем
-    fs1.access(`data/okdesk/${firstID}-${lastID}data.json`, constants.F_OK).then(async (d) => {
+    let status = ''
+    logToFile('Начало обмена данными между OkDesk и Спутник.')
+    logToFile('Начало загрузки локальных данных.')
+    await fs1.access(`data/okdesk/${firstID}-${lastID}data.json`, constants.F_OK).then(async (d) => {
         logToFile(`[OkDesk] Файл: '${firstID}-${lastID}data.json' - уже существует в 'data/okdesk'`)  
-        return await active(d)
-    }).catch(async () => {
-        const data = [] 
-        ///////Наполнение данных с запроса///////
-        logToFile('Начало загрузки локальных данных.')
-        const jsonData = JSON.stringify(data)
-        logToFile('Начало обмена данными между OkDesk и Спутник.')
-        /////////////Создание файла//////////////
-        fs2.writeFileSync(`data/okdesk/${firstID}-${lastID}data.json`, jsonData)
-        logToFile('Загрузка локальных данных закончена.')
-        logToFile('Обмен данными между OkDesk и Спутник завершен.')
-        return await active(false)
+        await active(true)
+
+    }).catch(async (e) => {
+        await active(false) 
     })
+    logToFile('Обмен данными между OkDesk и Спутник завершен.')
+    return status
 }
 
 // start(1024, 1034)
