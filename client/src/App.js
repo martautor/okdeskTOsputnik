@@ -12,7 +12,7 @@ function App() {
   const [Error, newError] = useState({msg:'', clr: 'red'})
   const [History, newHistory] = useState('')
   const [Log, newLog] = useState({msg:'', clr: ''})
-  
+
   useEffect(() => {
     async function getStatus() {
       return await fetch(`http://192.168.0.9:5000/api/test/`)
@@ -34,8 +34,12 @@ function App() {
     console.log(parseInt(firstValue), parseInt(secondValue))
     // e.preventDefault()
     newLog({msg: 'Loading...', clr: 'gray'})
-    if(firstValue === '' || secondValue === '') {
+    if(typeof secondValue !== 'number' || typeof secondValue !== 'number') {
       newError({msg:`[APP ERROR]  Поля должны быть заполнены цифрами.`, clr: 'red'})
+      return false
+    }
+    else if(!secondValue || !firstValue) {
+      newError({msg:`[APP ERROR]  Поля должны быть заполнены`, clr: 'red'})
       return false
     }
     try {
