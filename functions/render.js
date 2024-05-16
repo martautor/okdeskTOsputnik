@@ -12,8 +12,8 @@ let msg = ''
 
 module.exports = async function Render(jsonF) {
     const json = await jsonF
-    console.log(json)
-    if (typeof json === 'object') {
+    // console.log(json)
+    if (typeof json.errors === 'object') {
         return logToFile(`[Ошибка] ${json.errors}`, true)
     } 
     const params = {"key": process.env.SPUTNIK_API,"username": process.env.SPUTNIK_username,"password": process.env.SPUTNIK_password,"action": "insert",
