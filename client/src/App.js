@@ -34,15 +34,16 @@ function App() {
     console.log(parseInt(firstValue), parseInt(secondValue))
     // e.preventDefault()
     newLog({msg: 'Loading...', clr: 'gray'})
-    if(typeof secondValue !== 'number' || typeof secondValue !== 'number') {
-      newError({msg:`[APP ERROR]  Поля должны быть заполнены цифрами.`, clr: 'red'})
-      return false
-    }
-    else if(!secondValue || !firstValue) {
+    // if(typeof secondValue !== 'number' || typeof secondValue !== 'number') {
+    //   newError({msg:`[APP ERROR]  Поля должны быть заполнены цифрами.`, clr: 'red'})
+    //   return false
+    // }
+    if(!secondValue || !firstValue) {
       newError({msg:`[APP ERROR]  Поля должны быть заполнены`, clr: 'red'})
       return false
     }
     try {
+      newError({msg:``})
       newLog({msg: 'Loading...', clr: 'gray'})
       await Fetching(parseInt(firstValue), parseInt(secondValue))
       .then(res => res.json())
