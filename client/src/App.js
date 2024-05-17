@@ -18,20 +18,21 @@ function App() {
       return await fetch(`http://192.168.0.9:5000/api/test/`)
       .then(data => data.json())
       .then(data => newLog({msg: data.message, clr: data.color}))
+      .catch(e => {
+        newLog({msg: '[Ошибка] Нет связи с сервером', clr: 'red'})
+        console.log(e)
+      })
     }
     getStatus()
   }, [])
 
   const handleChangeFirstValue = (e) => {
     setFirstValue(e.target.value)
-    console.log(e.target.value)
   }
   const handleChangeSecondValue = (e) => {
     setSecondValue(e.target.value)
-    console.log(e.target.value)
   }
   const handleStart = async (e) => {
-    console.log(parseInt(firstValue), parseInt(secondValue))
     // e.preventDefault()
     newLog({msg: 'Loading...', clr: 'gray'})
     // if(typeof secondValue !== 'number' || typeof secondValue !== 'number') {
@@ -70,8 +71,9 @@ function App() {
       {!History ? 'Нажмите "Загрузить заявки"': History}
       </Grid>
       <Grid item xs={4} style={{ height: 600, borderRight: 'solid', borderLeft: 'solid', borderColor: 'black'}}>
-      <h2 style={{textAlign: 'center'}}>Обмен данными OkDesk to Sputnik</h2>
-      <h5 style={{textAlign: 'center'}}>by Martun Mkrtchyan {'<mart@kassa26.ru>'}</h5>
+      <h2 style={{textAlign: 'center', marginBottom: 0}}>Обмен данными OkDesk to Sputnik</h2>
+      <h5 style={{textAlign: 'center', margin: 0, opacity: 0.4}}> v 3.0.0 (stable)</h5>
+      <h4 style={{textAlign: 'center', marginTop: 10, opacity: 0.9}}>by Martun Mkrtchyan {'<mart@kassa26.ru>'}</h4>
       <div style={{marginRight: '15px', display: 'flex', flexFlow: 'column', flexWrap: 'wrap', alignContent: 'center', justifyContent: 'center', alignItems: 'center', textAlign: 'center'}} className="App">
         <TextField
           hiddenLabel

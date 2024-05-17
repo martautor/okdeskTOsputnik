@@ -37,8 +37,8 @@ app.get('/api/test', async (req, res) => {
         clr: 'gray'
     })
 })
-app.use('/api/test', datas_routes)
 
+app.use('/api/test', datas_routes)
 app.post('/api/start', async (req, res, next) => {
     const params = req.query
     let msg = '[Ошибка] '

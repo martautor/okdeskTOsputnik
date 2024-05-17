@@ -4,6 +4,7 @@ const getCompanyId = require('./getCompanyId');
 const formatDate = require('./formatDate');
 const fs2 = require('fs');
 const logToFile = require('./logToFile');
+const getTaskComments = require('./getTaskComments');
 const date = formatDate(new Date())
 // const logTime = '['+ new Date().getHours() + ':' + new Date().getMinutes() + ':' + new Date().getSeconds() + ']'
 // const logToFile = msg => fs2.appendFileSync(`data/${date}log.txt`, `${logTime} - ${msg}\n`);
@@ -23,7 +24,7 @@ module.exports = async function Render(jsonF) {
         "entity_id": process.env.timeentityID, /// ID Сущности "Время"
         "items": {"field_939": 15}}
     const getIt = await getCompanyId()
-    if (json['company_id'] !== null && json['company_id'] !== undefined) {
+    if (json['company_id'] !== null && json['company_id'] !== undefined && json['status'].code !== 'work') {
         Object.keys(json).map((key) => {
             switch (key) {
                 case 'company_id':  params.items.parent_item_id = getIt[`${json[key]}`]
@@ -51,7 +52,7 @@ module.exports = async function Render(jsonF) {
                 default: 
                     break     
             }
-              return params, timeParams   
+              return params, timeParams
         })
         logToFile(`Сущность с ID: ${json['id']} обработана на сервере.`)
         return startRender(params, timeParams)
@@ -64,6 +65,7 @@ module.exports = async function Render(jsonF) {
     
     fs2.writeFileSync(`data/sputnik/rendered/${date}_params.json`, JSON.stringify(p))
     fs2.writeFileSync(`data/sputnik/rendered/${date}_timeParams.json`, JSON.stringify(tp))
+    // fs2.writeFileSync(`data/sputnik/rendered/${date}_timeParams.json`, JSON.stringify(cp))
     /////////////////////////////////////////////////////////////////
     //////////////////////  Создание заявки  ////////////////////////
     const taskID = await fetch(`https://${process.env.SPUTNIK_address}/api/rest.php?${httpBuildQuery(p)}`, {
@@ -73,7 +75,7 @@ module.exports = async function Render(jsonF) {
     // /////////////////////////////////////////////////////////////////
     tp.items.parent_item_id = await taskID.data.id
     ///////////////////////  Вставка времени  /////////////////////// 
-    return await fetch(`https://${process.env.SPUTNIK_address}/api/rest.php?${httpBuildQuery(tp)}`, {
+    await fetch(`https://${process.env.SPUTNIK_address}/api/rest.php?${httpBuildQuery(tp)}`, {
         method: 'POST',
     })
         .then(response => response.json())
@@ -83,8 +85,27 @@ module.exports = async function Render(jsonF) {
             logToFile(`SputnikTaskID: ${taskID.data.id}`)
         })
     /////////////////////////////////////////////////////////////////
-    }
-    
+    ///////////////////////  Вставка комментариев  /////////////////////// 
+    // let comments = {}
+    Object.keys(json).map(async key => {
+        key === 'id'? data = getTaskComments(json[key])  : '';
+    })
+    const comments = await data
+    for (ids in comments) {
+        const cp = {"key": process.env.SPUTNIK_API,"username": process.env.SPUTNIK_username,"password": process.env.SPUTNIK_password,"action": "insert_comment",
+        "entity_id": process.env.taskentityID, /// ID Сущности "Заявки"
+        "item_id": await taskID.data.id,
+        "comment_description": comments[ids].desc,
+        "comment_fields": {
+            "field_784": 344,
+            "field_839": getObjValues(comments[ids], 'worker')
+        }}
+        const comFetch = await fetch(`https://${process.env.SPUTNIK_address}/api/rest.php?${httpBuildQuery(cp)}`)
+            .then(response => response.json())
+            .then(response => logToFile(`comment id: ${response.data.id}, task comment status: ${response.status}`))
+            return await comFetch
+        }
+    } 
 }
 
 function getObjValues(obj, who) {
@@ -112,13 +133,24 @@ function getObjValues(obj, who) {
                     break
                 case 1: number = 1
                     break 
-                case null: number = null
+                case null: number = 39
                     break
-                default: null
+                default: number = 39
                     break
             }
             return number
         }
         return number
+    } else if (who === 'comment') {
+        if(obj) {
+            switch (obj.attachments) {
+                case value:
+                    
+                    break;
+            
+                default:
+                    break;
+            }
+        }
     }
 }
