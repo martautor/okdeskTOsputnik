@@ -75,7 +75,7 @@ function App() {
       <h5 style={{textAlign: 'center', margin: 0, opacity: 0.4}}> v 3.0.0 (stable)</h5>
       <h4 style={{textAlign: 'center', marginTop: 10, opacity: 0.9}}>by Martun Mkrtchyan {'<mart@kassa26.ru>'}</h4>
       <div style={{marginRight: '15px', display: 'flex', flexFlow: 'column', flexWrap: 'wrap', alignContent: 'center', justifyContent: 'center', alignItems: 'center', textAlign: 'center'}} className="App">
-        <TextField
+        от <TextField
           hiddenLabel
           id="filled-hidden-label-small"
           defaultValue={firstValue}
@@ -88,7 +88,7 @@ function App() {
           margin="normal"
           color='success'
         />
-        <TextField
+        до <TextField
           hiddenLabel
           id="filled-hidden-label-small"
           defaultValue={secondValue}

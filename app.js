@@ -7,13 +7,15 @@ const fs1 = require('fs/promises')
 const fs2 = require('fs')
 const {constants} = require('fs')
 const logToFile = require('./functions/logToFile')
-
+const cron = require('node-cron');
 const express = require('express')
 const app = express()
 
 const datas_routes = require('./routes/data')
 const cors = require("cors");
 const { error } = require('console')
+
+let nextFID = undefined
 
 app.use(cors());
 
@@ -95,8 +97,10 @@ async function start(firstID, lastID) {
                 .then(data => { if (data === undefined) {
                     new Error('data is undefined')
                 } else {
-                    data
+                    nextFID = data
+                    console.log(nextFID)
                 }
+                console.log(nextFID, 'data: ' + data)
             })    
         }
         logToFile('Загрузка локальных данных закончена.') 
@@ -117,17 +121,15 @@ async function start(firstID, lastID) {
     return status
 }
 
-// start(1024, 1034)
-
-
-
-// const data = async () => { 
-//     return await fetch('https://kassa26.okdesk.ru/api/v1/issues/1044?api_token=0f955aaaa73e9d6bf01d258d7b5bbb5eb5ffaa52', {
-//         method: 'get',
-//         // body: data,
-//         headers: {
-//             'Content-Type': 'application/x-www-form-urlencoded',
+cron.schedule('* 00 19 * *', function() {
+        for (id in nextFID) {
+            start(nextFID[id], nextFID[id])
+        }
+    
+    });
+// cron.schedule('* * * * *', function() {
+//         for (id in nextFID) {
+//             start(nextFID[id], nextFID[id])
 //         }
-//     })
-//         .then(response => response.json())
-// }
+//     }
+// );

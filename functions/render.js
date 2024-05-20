@@ -5,18 +5,36 @@ const formatDate = require('./formatDate');
 const fs2 = require('fs');
 const logToFile = require('./logToFile');
 const getTaskComments = require('./getTaskComments');
+const { error } = require('console');
 const date = formatDate(new Date())
 // const logTime = '['+ new Date().getHours() + ':' + new Date().getMinutes() + ':' + new Date().getSeconds() + ']'
 // const logToFile = msg => fs2.appendFileSync(`data/${date}log.txt`, `${logTime} - ${msg}\n`);
 
 let msg = ''
 
+const skippedTasks = []
+const successedTasks = []
 module.exports = async function Render(jsonF) {
     const json = await jsonF
-    // console.log(json)
+    console.log(successedTasks)
+    if(json['id'] <= 1024 || successedTasks.find((e) => e === json['id'])) {
+        return logToFile(`[Ошибка] Заявка уже была ранее выгружена. (OkDesk ID: ${json['id']}) Пропуск...`)
+    }
     if (typeof json.errors === 'object') {
-        return logToFile(`[Ошибка] ${json.errors}`, true)
+        logToFile(`[Ошибка] ${json.errors}`, true)
     } 
+    
+    if(json['status'].code === 'opened' || json['status'].code === 'work') {
+        logToFile(`[Ошибка] Заявка не является завершненной (OkDesk ID: ${json['id']}) Пропуск...`)
+        if(!skippedTasks.includes(json['id'])) {
+            skippedTasks.push(json['id'])
+        }
+        return skippedTasks
+    } else {
+        let index = skippedTasks.indexOf(json['id'])
+        delete skippedTasks[index]
+    }
+    console.log(json['status'].code)
     const params = {"key": process.env.SPUTNIK_API,"username": process.env.SPUTNIK_username,"password": process.env.SPUTNIK_password,"action": "insert",
         "entity_id": process.env.taskentityID, /// ID Сущности "Заявки"
         "items": {}}
@@ -24,7 +42,8 @@ module.exports = async function Render(jsonF) {
         "entity_id": process.env.timeentityID, /// ID Сущности "Время"
         "items": {"field_939": 15}}
     const getIt = await getCompanyId()
-    if (json['company_id'] !== null && json['company_id'] !== undefined && json['status'].code !== 'work') {
+
+    if (json['company_id'] !== null && json['company_id'] !== undefined) {
         Object.keys(json).map((key) => {
             switch (key) {
                 case 'company_id':  params.items.parent_item_id = getIt[`${json[key]}`]
@@ -52,10 +71,11 @@ module.exports = async function Render(jsonF) {
                 default: 
                     break     
             }
-              return params, timeParams
         })
         logToFile(`Сущность с ID: ${json['id']} обработана на сервере.`)
-        return startRender(params, timeParams)
+        logToFile(json['id'], false, `data/sputnik/successed/${formatDate(new Date())}.txt`)
+        successedTasks.push(json['id'])
+        startRender(params, timeParams)
         // return `Сущность с ID: ${json['id']} обработана на сервере.`
     } else {
         return logToFile(`[Ошибка] Не найдено ID клиента (OkDesk ID: ${json['id']}) Пропуск...`, true)
@@ -103,8 +123,9 @@ module.exports = async function Render(jsonF) {
         const comFetch = await fetch(`https://${process.env.SPUTNIK_address}/api/rest.php?${httpBuildQuery(cp)}`)
             .then(response => response.json())
             .then(response => logToFile(`comment id: ${response.data.id}, task comment status: ${response.status}`))
-            return await comFetch
+            await comFetch
         }
+        // return skippedTasks
     } 
 }
 
@@ -141,16 +162,5 @@ function getObjValues(obj, who) {
             return number
         }
         return number
-    } else if (who === 'comment') {
-        if(obj) {
-            switch (obj.attachments) {
-                case value:
-                    
-                    break;
-            
-                default:
-                    break;
-            }
-        }
     }
 }
