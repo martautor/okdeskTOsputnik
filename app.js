@@ -15,7 +15,7 @@ const datas_routes = require('./routes/data')
 const cors = require("cors");
 const { error } = require('console')
 
-let nextFID = undefined
+let nextData = undefined
 
 app.use(cors());
 
@@ -53,7 +53,8 @@ app.post('/api/start', async (req, res, next) => {
         })
     } else {
         try {
-            console.log(await start(params.firstId, parseInt(params.lastId)))
+            console.log(parseInt(params.firstId), parseInt(params.lastId))
+            await start(parseInt(params.firstId), parseInt(params.lastId))
             res.status(200)
             res.json({
                 message: 'Данные переданы на сервер.',
@@ -94,14 +95,13 @@ async function start(firstID, lastID) {
                 fs2.writeFileSync(`data/okdesk/${firstID}-${lastID}data.json`, jsonData)
             }
             await Render(await getData(i))
-                .then(data => { if (data === undefined) {
-                    new Error('data is undefined')
-                } else {
-                    nextFID = data
-                    console.log(nextFID)
-                }
-                console.log(nextFID, 'data: ' + data)
-            })    
+                .then(data => { 
+                if (data === undefined) throw createError(404, 'data is undefined')
+                    else {
+                    // console.log(data)
+                    nextData = data
+                    }})
+                .catch(e => {logToFile(e.message, true); throw createError(404, e.message)})
         }
         logToFile('Загрузка локальных данных закончена.') 
     }    
@@ -121,15 +121,20 @@ async function start(firstID, lastID) {
     return status
 }
 
-cron.schedule('* 00 19 * *', function() {
-        for (id in nextFID) {
-            start(nextFID[id], nextFID[id])
-        }
-    
-    });
-// cron.schedule('* * * * *', function() {
-//         for (id in nextFID) {
-//             start(nextFID[id], nextFID[id])
-//         }
-//     }
-// );
+app.get('/api/nextdata', async (req, res) => {
+    res.json(nextData)
+})
+
+app.use('/api/successIds', datas_routes)
+
+cron.schedule('* * * * *', function() {
+    let fids = nextData.skipped
+    let lids = nextData.successed.at(-1)
+    console.log(fids, lids+10)
+    for (id in fids) {
+        start(fids[id], fids[id])
+    }
+    for (id in fids) {
+        start(lids+1, lids+6)
+    }
+});

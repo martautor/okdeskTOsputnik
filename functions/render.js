@@ -6,6 +6,7 @@ const fs2 = require('fs');
 const logToFile = require('./logToFile');
 const getTaskComments = require('./getTaskComments');
 const { error } = require('console');
+const createError = require('http-errors');
 const date = formatDate(new Date())
 // const logTime = '['+ new Date().getHours() + ':' + new Date().getMinutes() + ':' + new Date().getSeconds() + ']'
 // const logToFile = msg => fs2.appendFileSync(`data/${date}log.txt`, `${logTime} - ${msg}\n`);
@@ -13,28 +14,40 @@ const date = formatDate(new Date())
 let msg = ''
 
 const skippedTasks = []
-const successedTasks = []
+const successedTasks = [1025,1027,1028,1029,1030,1031,1032,1033,1034,1035,1037,
+                        1038,1039,1040,1041,1042,1044,1045,1047,1048,1049,1050,
+                        1051,1052,1053,1054,1055,1056,1057,1058,1059,1060,1062,
+                        1063,1064,1065,1066,1067,1068,1069,1070,1071,1072,1073,
+                        1074,1075,1076,1077,1078,1079,1080,1081,1082,1083,1084,
+                        1085,1087,1088,1089,1090,1091,1092,1093,1094,1095,1096,
+                        1097,1098,1099,1100,1101,1102,1103,1104,1105,1106,1107,
+                        1108,1109,1110,1111,1112,1113,1114,1115,1116,1117,1118,
+                        1119,1120,1121,1122,1123,1124,1125,1126,1127,1128,1129,
+                        1130,1132,1133,1134,1135,1137,1138,1139,1140,1141,1142,
+                        1143,1144,1145,1146,1147,1148,1149,1151,1153,1155,1156,
+                        1157,1159,1160,1161,1162,1163,1164,1165,1166,1167,1168,
+                        1169,1170,1171,1172,1173,1174,1175,1176,1179,1180,1181,
+                        1182,1183,1184,1185,1186,1188,1189,1190,1192,1194,1195]
 module.exports = async function Render(jsonF) {
     const json = await jsonF
-    console.log(successedTasks)
-    if(json['id'] <= 1024 || successedTasks.find((e) => e === json['id'])) {
-        return logToFile(`[Ошибка] Заявка уже была ранее выгружена. (OkDesk ID: ${json['id']}) Пропуск...`)
-    }
-    if (typeof json.errors === 'object') {
-        logToFile(`[Ошибка] ${json.errors}`, true)
-    } 
-    
     if(json['status'].code === 'opened' || json['status'].code === 'work') {
-        logToFile(`[Ошибка] Заявка не является завершненной (OkDesk ID: ${json['id']}) Пропуск...`)
+        logToFile(`[LOG] Заявка не является завершенной (OkDesk ID: ${json['id']}) Пропуск...`, true)
+        console.log(!skippedTasks.includes(json['id']))
         if(!skippedTasks.includes(json['id'])) {
             skippedTasks.push(json['id'])
         }
-        return skippedTasks
+        return {skipped: skippedTasks, successed: successedTasks}
     } else {
         let index = skippedTasks.indexOf(json['id'])
         delete skippedTasks[index]
-    }
-    console.log(json['status'].code)
+    } if (json['id'] <= 1024 || successedTasks.find((e) => e === json['id'])) {
+         logToFile(`Заявка уже была ранее выгружена. (OkDesk ID: ${json['id']})`, true)
+         return {skipped: skippedTasks, successed: successedTasks}
+    } if (typeof json.errors === 'object') {
+        logToFile(`${json.errors}`, true, `data/sputnik/logs/${formatDate(new Date())}.log`, true)
+        return {skipped: skippedTasks, successed: successedTasks}
+    } 
+    
     const params = {"key": process.env.SPUTNIK_API,"username": process.env.SPUTNIK_username,"password": process.env.SPUTNIK_password,"action": "insert",
         "entity_id": process.env.taskentityID, /// ID Сущности "Заявки"
         "items": {}}
@@ -76,9 +89,10 @@ module.exports = async function Render(jsonF) {
         logToFile(json['id'], false, `data/sputnik/successed/${formatDate(new Date())}.txt`)
         successedTasks.push(json['id'])
         startRender(params, timeParams)
-        // return `Сущность с ID: ${json['id']} обработана на сервере.`
+        return {skipped: skippedTasks, successed: successedTasks}
     } else {
-        return logToFile(`[Ошибка] Не найдено ID клиента (OkDesk ID: ${json['id']}) Пропуск...`, true)
+        logToFile(`Не найдено ID клиента (OkDesk ID: ${json['id']}) Пропуск...`, true)
+        return {skipped: skippedTasks, successed: successedTasks}
         // new Error(`[Ошибка] Не найдено ID клиента (OkDesk ID: ${json['id']}) Пропуск...`)
     }
     async function startRender(p, tp) {
@@ -125,7 +139,7 @@ module.exports = async function Render(jsonF) {
             .then(response => logToFile(`comment id: ${response.data.id}, task comment status: ${response.status}`))
             await comFetch
         }
-        // return skippedTasks
+        return {skipped: skippedTasks, successed: successedTasks}
     } 
 }
 

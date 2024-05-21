@@ -1157,3 +1157,1041 @@
 [12:57:1] - [Инфо] SputnikTaskID: 29319
 [12:57:1] - [Инфо] comment id: 151448, task comment status: success
 [12:57:1] - [Инфо] comment id: 151449, task comment status: success
+[13:56:53] - [Инфо] Developer - Mkrtchyan Martun <mart@kassa26.ru>
+[13:56:53] - [Инфо] Начало обмена данными между OkDesk и Спутник.
+[13:56:53] - [Инфо] Начало загрузки локальных данных.
+[13:56:53] - [Инфо] [Ошибка] Заявка уже была ранее выгружена. (OkDesk ID: 1024) Пропуск...
+[13:56:54] - [Инфо] Сущность с ID: 1025 обработана на сервере.
+[13:56:54] - [Инфо] Отправка данных в Спутник...
+[13:56:54] - [Инфо] task status: success, task time status: success
+[13:56:54] - [Инфо] SputnikTaskID: 29323
+[13:56:54] - [Ошибка] Не найдено ID клиента (OkDesk ID: 1026) Пропуск..., пожалуйста исправьте ошибку, пожалуйста исправьте ошибку.
+[13:56:54] - [Инфо] comment id: 151458, task comment status: success
+[13:56:54] - [Инфо] comment id: 151459, task comment status: success
+[13:56:54] - [Инфо] Сущность с ID: 1027 обработана на сервере.
+[13:56:55] - [Инфо] comment id: 151460, task comment status: success
+[13:56:55] - [Инфо] comment id: 151461, task comment status: success
+[13:56:55] - [Инфо] Отправка данных в Спутник...
+[13:56:55] - [Инфо] task status: success, task time status: success
+[13:56:55] - [Инфо] SputnikTaskID: 29324
+[13:56:55] - [Инфо] Сущность с ID: 1028 обработана на сервере.
+[13:56:55] - [Инфо] comment id: 151462, task comment status: success
+[13:56:55] - [Инфо] comment id: 151463, task comment status: success
+[13:56:55] - [Инфо] Отправка данных в Спутник...
+[13:56:55] - [Инфо] task status: success, task time status: success
+[13:56:55] - [Инфо] SputnikTaskID: 29325
+[13:56:55] - [Инфо] comment id: 151464, task comment status: success
+[13:56:55] - [Инфо] comment id: 151465, task comment status: success
+[13:56:55] - [Инфо] Сущность с ID: 1029 обработана на сервере.
+[13:56:55] - [Инфо] comment id: 151466, task comment status: success
+[13:56:55] - [Инфо] comment id: 151467, task comment status: success
+[13:56:56] - [Инфо] Отправка данных в Спутник...
+[13:56:56] - [Инфо] task status: success, task time status: success
+[13:56:56] - [Инфо] SputnikTaskID: 29326
+[13:56:56] - [Инфо] comment id: 151468, task comment status: success
+[13:56:56] - [Инфо] Сущность с ID: 1030 обработана на сервере.
+[13:56:56] - [Инфо] Отправка данных в Спутник...
+[13:56:56] - [Инфо] task status: success, task time status: success
+[13:56:56] - [Инфо] SputnikTaskID: 29327
+[13:56:56] - [Инфо] comment id: 151469, task comment status: success
+[13:56:56] - [Инфо] Сущность с ID: 1031 обработана на сервере.
+[13:56:57] - [Инфо] Отправка данных в Спутник...
+[13:56:57] - [Инфо] task status: success, task time status: success
+[13:56:57] - [Инфо] SputnikTaskID: 29328
+[13:56:57] - [Инфо] comment id: 151470, task comment status: success
+[13:56:57] - [Инфо] Сущность с ID: 1032 обработана на сервере.
+[13:56:57] - [Инфо] Отправка данных в Спутник...
+[13:56:57] - [Инфо] task status: success, task time status: success
+[13:56:57] - [Инфо] SputnikTaskID: 29329
+[13:56:57] - [Инфо] comment id: 151471, task comment status: success
+[13:56:57] - [Инфо] Сущность с ID: 1033 обработана на сервере.
+[13:56:58] - [Инфо] comment id: 151472, task comment status: success
+[13:56:58] - [Инфо] Отправка данных в Спутник...
+[13:56:58] - [Инфо] task status: success, task time status: success
+[13:56:58] - [Инфо] SputnikTaskID: 29330
+[13:56:58] - [Инфо] comment id: 151473, task comment status: success
+[13:56:58] - [Инфо] comment id: 151474, task comment status: success
+[13:56:58] - [Инфо] Сущность с ID: 1034 обработана на сервере.
+[13:56:58] - [Инфо] Отправка данных в Спутник...
+[13:56:58] - [Инфо] task status: success, task time status: success
+[13:56:58] - [Инфо] SputnikTaskID: 29331
+[13:56:58] - [Инфо] comment id: 151475, task comment status: success
+[13:56:59] - [Инфо] Сущность с ID: 1035 обработана на сервере.
+[13:56:59] - Записи 1036 не существует, пожалуйста исправьте ошибку, пожалуйста исправьте ошибку.
+[13:56:59] - [Инфо] Отправка данных в Спутник...
+[13:56:59] - [Инфо] task status: success, task time status: success
+[13:56:59] - [Инфо] SputnikTaskID: 29332
+[13:56:59] - [Инфо] comment id: 151476, task comment status: success
+[13:56:59] - [Инфо] comment id: 151477, task comment status: success
+[13:56:59] - [Инфо] comment id: 151478, task comment status: success
+[13:57:0] - [Инфо] comment id: 151479, task comment status: success
+[13:57:0] - [Инфо] comment id: 151480, task comment status: success
+[13:57:0] - [Инфо] comment id: 151481, task comment status: success
+[13:57:0] - [Инфо] comment id: 151482, task comment status: success
+[13:57:0] - [Инфо] comment id: 151483, task comment status: success
+[13:57:0] - [Инфо] comment id: 151484, task comment status: success
+[13:57:0] - [Инфо] comment id: 151485, task comment status: success
+[13:57:1] - [Инфо] comment id: 151486, task comment status: success
+[13:57:1] - [Инфо] comment id: 151487, task comment status: success
+[13:57:1] - [Инфо] comment id: 151488, task comment status: success
+[13:57:1] - [Инфо] comment id: 151489, task comment status: success
+[13:57:27] - [Инфо] Developer - Mkrtchyan Martun <mart@kassa26.ru>
+[13:57:27] - [Инфо] Начало обмена данными между OkDesk и Спутник.
+[13:57:27] - [Инфо] Начало загрузки локальных данных.
+[13:57:28] - [Инфо] Сущность с ID: 1037 обработана на сервере.
+[13:57:29] - [Инфо] Отправка данных в Спутник...
+[13:57:29] - [Инфо] task status: success, task time status: success
+[13:57:29] - [Инфо] SputnikTaskID: 29333
+[13:57:29] - [Инфо] Сущность с ID: 1038 обработана на сервере.
+[13:57:29] - [Инфо] comment id: 151491, task comment status: success
+[13:57:29] - [Инфо] Отправка данных в Спутник...
+[13:57:29] - [Инфо] task status: success, task time status: success
+[13:57:29] - [Инфо] SputnikTaskID: 29334
+[13:57:29] - [Инфо] Сущность с ID: 1039 обработана на сервере.
+[13:57:30] - [Инфо] comment id: 151492, task comment status: success
+[13:57:30] - [Инфо] Отправка данных в Спутник...
+[13:57:30] - [Инфо] task status: success, task time status: success
+[13:57:30] - [Инфо] SputnikTaskID: 29335
+[13:57:30] - [Инфо] comment id: 151493, task comment status: success
+[13:57:30] - [Инфо] Сущность с ID: 1040 обработана на сервере.
+[13:57:31] - [Инфо] Отправка данных в Спутник...
+[13:57:31] - [Инфо] task status: success, task time status: success
+[13:57:31] - [Инфо] SputnikTaskID: 29336
+[13:57:31] - [Инфо] Сущность с ID: 1041 обработана на сервере.
+[13:57:31] - [Инфо] comment id: 151494, task comment status: success
+[13:57:31] - [Инфо] Отправка данных в Спутник...
+[13:57:31] - [Инфо] task status: success, task time status: success
+[13:57:31] - [Инфо] SputnikTaskID: 29337
+[13:57:31] - [Инфо] Сущность с ID: 1042 обработана на сервере.
+[13:57:31] - [Инфо] comment id: 151495, task comment status: success
+[13:57:31] - [Инфо] comment id: 151496, task comment status: success
+[13:57:31] - [Инфо] Отправка данных в Спутник...
+[13:57:31] - [Инфо] task status: success, task time status: success
+[13:57:31] - [Инфо] SputnikTaskID: 29338
+[13:57:32] - [Инфо] comment id: 151497, task comment status: success
+[13:57:32] - [Инфо] comment id: 151498, task comment status: success
+[13:57:32] - [Ошибка] Не найдено ID клиента (OkDesk ID: 1043) Пропуск..., пожалуйста исправьте ошибку, пожалуйста исправьте ошибку.
+[13:57:32] - [Инфо] Сущность с ID: 1044 обработана на сервере.
+[13:57:32] - [Инфо] Отправка данных в Спутник...
+[13:57:32] - [Инфо] task status: success, task time status: success
+[13:57:32] - [Инфо] SputnikTaskID: 29339
+[13:57:33] - [Инфо] comment id: 151499, task comment status: success
+[13:57:33] - [Инфо] Сущность с ID: 1045 обработана на сервере.
+[13:57:33] - [Инфо] comment id: 151500, task comment status: success
+[13:57:33] - [Инфо] Отправка данных в Спутник...
+[13:57:33] - [Инфо] task status: success, task time status: success
+[13:57:33] - [Инфо] SputnikTaskID: 29340
+[13:57:33] - [Инфо] comment id: 151501, task comment status: success
+[13:57:33] - [Ошибка] Не найдено ID клиента (OkDesk ID: 1046) Пропуск..., пожалуйста исправьте ошибку, пожалуйста исправьте ошибку.
+[13:57:33] - [Инфо] comment id: 151502, task comment status: success
+[13:57:33] - [Инфо] comment id: 151503, task comment status: success
+[13:57:33] - [Инфо] comment id: 151504, task comment status: success
+[13:57:33] - [Инфо] comment id: 151505, task comment status: success
+[13:57:34] - [Инфо] Сущность с ID: 1047 обработана на сервере.
+[13:57:34] - [Инфо] Отправка данных в Спутник...
+[13:57:34] - [Инфо] task status: success, task time status: success
+[13:57:34] - [Инфо] SputnikTaskID: 29341
+[13:57:34] - [Инфо] comment id: 151506, task comment status: success
+[13:57:34] - [Инфо] Сущность с ID: 1048 обработана на сервере.
+[13:57:34] - [Инфо] Отправка данных в Спутник...
+[13:57:34] - [Инфо] task status: success, task time status: success
+[13:57:34] - [Инфо] SputnikTaskID: 29342
+[13:57:35] - [Инфо] comment id: 151507, task comment status: success
+[13:57:35] - [Инфо] Сущность с ID: 1049 обработана на сервере.
+[13:57:35] - [Инфо] comment id: 151508, task comment status: success
+[13:57:35] - [Инфо] Отправка данных в Спутник...
+[13:57:35] - [Инфо] task status: success, task time status: success
+[13:57:35] - [Инфо] SputnikTaskID: 29343
+[13:57:35] - [Инфо] comment id: 151509, task comment status: success
+[13:57:35] - [Инфо] comment id: 151510, task comment status: success
+[13:57:35] - [Инфо] Сущность с ID: 1050 обработана на сервере.
+[13:57:36] - [Инфо] Отправка данных в Спутник...
+[13:57:36] - [Инфо] task status: success, task time status: success
+[13:57:36] - [Инфо] SputnikTaskID: 29344
+[13:57:36] - [Инфо] comment id: 151511, task comment status: success
+[13:57:36] - [Инфо] Сущность с ID: 1051 обработана на сервере.
+[13:57:36] - [Инфо] Отправка данных в Спутник...
+[13:57:36] - [Инфо] task status: success, task time status: success
+[13:57:36] - [Инфо] SputnikTaskID: 29345
+[13:57:36] - [Инфо] comment id: 151512, task comment status: success
+[13:57:36] - [Инфо] Сущность с ID: 1052 обработана на сервере.
+[13:57:37] - [Инфо] Отправка данных в Спутник...
+[13:57:37] - [Инфо] task status: success, task time status: success
+[13:57:37] - [Инфо] SputnikTaskID: 29346
+[13:57:37] - [Инфо] comment id: 151513, task comment status: success
+[13:57:37] - [Инфо] Сущность с ID: 1053 обработана на сервере.
+[13:57:37] - [Инфо] Отправка данных в Спутник...
+[13:57:37] - [Инфо] task status: success, task time status: success
+[13:57:37] - [Инфо] SputnikTaskID: 29347
+[13:57:37] - [Инфо] comment id: 151514, task comment status: success
+[13:57:37] - [Инфо] Сущность с ID: 1054 обработана на сервере.
+[13:57:38] - [Инфо] Отправка данных в Спутник...
+[13:57:38] - [Инфо] task status: success, task time status: success
+[13:57:38] - [Инфо] SputnikTaskID: 29348
+[13:57:38] - [Инфо] comment id: 151515, task comment status: success
+[13:57:38] - [Инфо] Сущность с ID: 1055 обработана на сервере.
+[13:57:38] - [Инфо] Отправка данных в Спутник...
+[13:57:38] - [Инфо] task status: success, task time status: success
+[13:57:38] - [Инфо] SputnikTaskID: 29349
+[13:57:38] - [Инфо] comment id: 151516, task comment status: success
+[13:57:38] - [Инфо] Сущность с ID: 1056 обработана на сервере.
+[13:57:39] - [Инфо] Отправка данных в Спутник...
+[13:57:39] - [Инфо] task status: success, task time status: success
+[13:57:39] - [Инфо] SputnikTaskID: 29350
+[13:57:39] - [Инфо] Сущность с ID: 1057 обработана на сервере.
+[13:57:39] - [Инфо] comment id: 151517, task comment status: success
+[13:57:39] - [Инфо] comment id: 151518, task comment status: success
+[13:57:39] - [Инфо] Отправка данных в Спутник...
+[13:57:39] - [Инфо] task status: success, task time status: success
+[13:57:39] - [Инфо] SputnikTaskID: 29351
+[13:57:39] - [Инфо] comment id: 151519, task comment status: success
+[13:57:39] - [Инфо] comment id: 151520, task comment status: success
+[13:57:39] - [Инфо] Сущность с ID: 1058 обработана на сервере.
+[13:57:39] - [Инфо] comment id: 151521, task comment status: success
+[13:57:39] - [Инфо] Отправка данных в Спутник...
+[13:57:39] - [Инфо] task status: success, task time status: success
+[13:57:39] - [Инфо] SputnikTaskID: 29352
+[13:57:40] - [Инфо] comment id: 151522, task comment status: success
+[13:57:40] - [Инфо] comment id: 151523, task comment status: success
+[13:57:40] - [Инфо] Сущность с ID: 1059 обработана на сервере.
+[13:57:40] - [Инфо] Отправка данных в Спутник...
+[13:57:40] - [Инфо] task status: success, task time status: success
+[13:57:40] - [Инфо] SputnikTaskID: 29353
+[13:57:40] - [Инфо] Сущность с ID: 1060 обработана на сервере.
+[13:57:40] - [Инфо] comment id: 151524, task comment status: success
+[13:57:41] - [Инфо] Отправка данных в Спутник...
+[13:57:41] - [Инфо] task status: success, task time status: success
+[13:57:41] - [Инфо] SputnikTaskID: 29354
+[13:57:41] - [Инфо] comment id: 151525, task comment status: success
+[13:57:41] - [Инфо] comment id: 151526, task comment status: success
+[13:57:41] - [Инфо] comment id: 151527, task comment status: success
+[13:57:41] - [Ошибка] Не найдено ID клиента (OkDesk ID: 1061) Пропуск..., пожалуйста исправьте ошибку, пожалуйста исправьте ошибку.
+[13:57:42] - [Инфо] Сущность с ID: 1062 обработана на сервере.
+[13:57:42] - [Инфо] Отправка данных в Спутник...
+[13:57:42] - [Инфо] task status: success, task time status: success
+[13:57:42] - [Инфо] SputnikTaskID: 29355
+[13:57:42] - [Инфо] comment id: 151528, task comment status: success
+[13:57:42] - [Инфо] Сущность с ID: 1063 обработана на сервере.
+[13:57:43] - [Инфо] Отправка данных в Спутник...
+[13:57:43] - [Инфо] task status: success, task time status: success
+[13:57:43] - [Инфо] SputnikTaskID: 29356
+[13:57:43] - [Инфо] Сущность с ID: 1064 обработана на сервере.
+[13:57:43] - [Инфо] Отправка данных в Спутник...
+[13:57:43] - [Инфо] task status: success, task time status: success
+[13:57:43] - [Инфо] SputnikTaskID: 29357
+[13:57:43] - [Инфо] comment id: 151529, task comment status: success
+[13:57:44] - [Инфо] Сущность с ID: 1065 обработана на сервере.
+[13:57:44] - [Инфо] comment id: 151530, task comment status: success
+[13:57:44] - [Инфо] Отправка данных в Спутник...
+[13:57:44] - [Инфо] task status: success, task time status: success
+[13:57:44] - [Инфо] SputnikTaskID: 29358
+[13:57:44] - [Инфо] comment id: 151531, task comment status: success
+[13:57:45] - [Инфо] Сущность с ID: 1066 обработана на сервере.
+[13:57:45] - [Инфо] Отправка данных в Спутник...
+[13:57:45] - [Инфо] task status: success, task time status: success
+[13:57:45] - [Инфо] SputnikTaskID: 29359
+[13:57:45] - [Инфо] comment id: 151532, task comment status: success
+[13:57:45] - [Инфо] Сущность с ID: 1067 обработана на сервере.
+[13:57:45] - [Инфо] Отправка данных в Спутник...
+[13:57:45] - [Инфо] task status: success, task time status: success
+[13:57:45] - [Инфо] SputnikTaskID: 29360
+[13:57:46] - [Инфо] comment id: 151533, task comment status: success
+[13:57:46] - [Инфо] Сущность с ID: 1068 обработана на сервере.
+[13:57:46] - [Инфо] Отправка данных в Спутник...
+[13:57:46] - [Инфо] task status: success, task time status: success
+[13:57:46] - [Инфо] SputnikTaskID: 29361
+[13:57:46] - [Инфо] comment id: 151534, task comment status: success
+[13:57:47] - [Инфо] Сущность с ID: 1069 обработана на сервере.
+[13:57:47] - [Инфо] comment id: 151535, task comment status: success
+[13:57:47] - [Инфо] comment id: 151536, task comment status: success
+[13:57:47] - [Инфо] Отправка данных в Спутник...
+[13:57:47] - [Инфо] task status: success, task time status: success
+[13:57:47] - [Инфо] SputnikTaskID: 29362
+[13:57:47] - [Инфо] comment id: 151537, task comment status: success
+[13:57:47] - [Инфо] comment id: 151538, task comment status: success
+[13:57:47] - [Инфо] comment id: 151539, task comment status: success
+[13:57:47] - [Инфо] Сущность с ID: 1070 обработана на сервере.
+[13:57:48] - [Инфо] Отправка данных в Спутник...
+[13:57:48] - [Инфо] task status: success, task time status: success
+[13:57:48] - [Инфо] SputnikTaskID: 29363
+[13:57:48] - [Инфо] Сущность с ID: 1071 обработана на сервере.
+[13:57:48] - [Инфо] comment id: 151540, task comment status: success
+[13:57:48] - [Инфо] comment id: 151541, task comment status: success
+[13:57:48] - [Инфо] Отправка данных в Спутник...
+[13:57:48] - [Инфо] task status: success, task time status: success
+[13:57:48] - [Инфо] SputnikTaskID: 29364
+[13:57:48] - [Инфо] comment id: 151542, task comment status: success
+[13:57:48] - [Инфо] Сущность с ID: 1072 обработана на сервере.
+[13:57:49] - [Инфо] comment id: 151543, task comment status: success
+[13:57:49] - [Инфо] Отправка данных в Спутник...
+[13:57:49] - [Инфо] task status: success, task time status: success
+[13:57:49] - [Инфо] SputnikTaskID: 29365
+[13:57:49] - [Инфо] Сущность с ID: 1073 обработана на сервере.
+[13:57:49] - [Инфо] comment id: 151544, task comment status: success
+[13:57:49] - [Инфо] Отправка данных в Спутник...
+[13:57:49] - [Инфо] task status: success, task time status: success
+[13:57:49] - [Инфо] SputnikTaskID: 29366
+[13:57:49] - [Инфо] comment id: 151545, task comment status: success
+[13:57:49] - [Инфо] comment id: 151546, task comment status: success
+[13:57:49] - [Инфо] comment id: 151547, task comment status: success
+[13:57:50] - [Инфо] Сущность с ID: 1074 обработана на сервере.
+[13:57:50] - [Инфо] comment id: 151548, task comment status: success
+[13:57:50] - [Инфо] comment id: 151549, task comment status: success
+[13:57:50] - [Инфо] comment id: 151550, task comment status: success
+[13:57:50] - [Инфо] Отправка данных в Спутник...
+[13:57:50] - [Инфо] task status: success, task time status: success
+[13:57:50] - [Инфо] SputnikTaskID: 29367
+[13:57:50] - [Инфо] comment id: 151551, task comment status: success
+[13:57:50] - [Инфо] comment id: 151552, task comment status: success
+[13:57:50] - [Инфо] Сущность с ID: 1075 обработана на сервере.
+[13:57:50] - [Инфо] comment id: 151553, task comment status: success
+[13:57:50] - [Инфо] comment id: 151554, task comment status: success
+[13:57:50] - [Инфо] comment id: 151555, task comment status: success
+[13:57:51] - [Инфо] Отправка данных в Спутник...
+[13:57:51] - [Инфо] task status: success, task time status: success
+[13:57:51] - [Инфо] SputnikTaskID: 29368
+[13:57:51] - [Инфо] comment id: 151556, task comment status: success
+[13:57:51] - [Инфо] comment id: 151557, task comment status: success
+[13:57:51] - [Инфо] comment id: 151558, task comment status: success
+[13:57:51] - [Инфо] Сущность с ID: 1076 обработана на сервере.
+[13:57:51] - [Инфо] Отправка данных в Спутник...
+[13:57:51] - [Инфо] task status: success, task time status: success
+[13:57:51] - [Инфо] SputnikTaskID: 29369
+[13:57:52] - [Инфо] comment id: 151559, task comment status: success
+[13:57:52] - [Инфо] Сущность с ID: 1077 обработана на сервере.
+[13:57:52] - [Инфо] Отправка данных в Спутник...
+[13:57:52] - [Инфо] task status: success, task time status: success
+[13:57:52] - [Инфо] SputnikTaskID: 29370
+[13:57:52] - [Инфо] comment id: 151560, task comment status: success
+[13:57:52] - [Инфо] Сущность с ID: 1078 обработана на сервере.
+[13:57:53] - [Инфо] Отправка данных в Спутник...
+[13:57:53] - [Инфо] task status: success, task time status: success
+[13:57:53] - [Инфо] SputnikTaskID: 29371
+[13:57:53] - [Инфо] comment id: 151561, task comment status: success
+[13:57:53] - [Инфо] Сущность с ID: 1079 обработана на сервере.
+[13:57:53] - [Инфо] comment id: 151562, task comment status: success
+[13:57:53] - [Инфо] Отправка данных в Спутник...
+[13:57:53] - [Инфо] task status: success, task time status: success
+[13:57:53] - [Инфо] SputnikTaskID: 29372
+[13:57:53] - [Инфо] comment id: 151563, task comment status: success
+[13:57:54] - [Инфо] Сущность с ID: 1080 обработана на сервере.
+[13:57:54] - [Инфо] Отправка данных в Спутник...
+[13:57:54] - [Инфо] task status: success, task time status: success
+[13:57:54] - [Инфо] SputnikTaskID: 29373
+[13:57:54] - [Инфо] comment id: 151564, task comment status: success
+[13:57:54] - [Инфо] Сущность с ID: 1081 обработана на сервере.
+[13:57:54] - [Инфо] Отправка данных в Спутник...
+[13:57:54] - [Инфо] task status: success, task time status: success
+[13:57:54] - [Инфо] SputnikTaskID: 29374
+[13:57:55] - [Инфо] comment id: 151565, task comment status: success
+[13:57:55] - [Инфо] Сущность с ID: 1082 обработана на сервере.
+[13:57:55] - [Инфо] comment id: 151566, task comment status: success
+[13:57:55] - [Инфо] Отправка данных в Спутник...
+[13:57:55] - [Инфо] task status: success, task time status: success
+[13:57:55] - [Инфо] SputnikTaskID: 29375
+[13:57:55] - [Инфо] comment id: 151567, task comment status: success
+[13:57:55] - [Инфо] Сущность с ID: 1083 обработана на сервере.
+[13:57:55] - [Инфо] comment id: 151568, task comment status: success
+[13:57:55] - [Инфо] Отправка данных в Спутник...
+[13:57:55] - [Инфо] task status: success, task time status: success
+[13:57:55] - [Инфо] SputnikTaskID: 29376
+[13:57:56] - [Инфо] Сущность с ID: 1084 обработана на сервере.
+[13:57:56] - [Инфо] comment id: 151569, task comment status: success
+[13:57:56] - [Инфо] Отправка данных в Спутник...
+[13:57:56] - [Инфо] task status: success, task time status: success
+[13:57:56] - [Инфо] SputnikTaskID: 29377
+[13:57:56] - [Инфо] comment id: 151570, task comment status: success
+[13:57:56] - [Инфо] comment id: 151571, task comment status: success
+[13:57:56] - [Инфо] comment id: 151572, task comment status: success
+[13:57:56] - [Инфо] comment id: 151574, task comment status: success
+[13:57:56] - [Инфо] comment id: 151573, task comment status: success
+[13:57:56] - [Инфо] Сущность с ID: 1085 обработана на сервере.
+[13:57:56] - [Инфо] comment id: 151575, task comment status: success
+[13:57:56] - [Инфо] Отправка данных в Спутник...
+[13:57:56] - [Инфо] task status: success, task time status: success
+[13:57:56] - [Инфо] SputnikTaskID: 29378
+[13:57:57] - [Инфо] comment id: 151576, task comment status: success
+[13:57:57] - [Инфо] [Ошибка] Заявка не является завершненной (OkDesk ID: 1086) Пропуск...
+[13:57:57] - [Инфо] comment id: 151577, task comment status: success
+[13:57:57] - [Инфо] Сущность с ID: 1087 обработана на сервере.
+[13:57:58] - [Инфо] Отправка данных в Спутник...
+[13:57:58] - [Инфо] task status: success, task time status: success
+[13:57:58] - [Инфо] SputnikTaskID: 29379
+[13:57:58] - [Инфо] Сущность с ID: 1088 обработана на сервере.
+[13:57:58] - [Инфо] comment id: 151578, task comment status: success
+[13:57:58] - [Инфо] Отправка данных в Спутник...
+[13:57:58] - [Инфо] task status: success, task time status: success
+[13:57:58] - [Инфо] SputnikTaskID: 29380
+[13:57:58] - [Инфо] comment id: 151579, task comment status: success
+[13:57:58] - [Инфо] Сущность с ID: 1089 обработана на сервере.
+[13:57:59] - [Инфо] Отправка данных в Спутник...
+[13:57:59] - [Инфо] task status: success, task time status: success
+[13:57:59] - [Инфо] SputnikTaskID: 29381
+[13:57:59] - [Инфо] comment id: 151580, task comment status: success
+[13:57:59] - [Инфо] Сущность с ID: 1090 обработана на сервере.
+[13:57:59] - [Инфо] Отправка данных в Спутник...
+[13:57:59] - [Инфо] task status: success, task time status: success
+[13:57:59] - [Инфо] SputnikTaskID: 29382
+[13:57:59] - [Инфо] comment id: 151581, task comment status: success
+[13:57:59] - [Инфо] Сущность с ID: 1091 обработана на сервере.
+[13:58:0] - [Инфо] Отправка данных в Спутник...
+[13:58:0] - [Инфо] task status: success, task time status: success
+[13:58:0] - [Инфо] SputnikTaskID: 29383
+[13:58:0] - [Инфо] Сущность с ID: 1092 обработана на сервере.
+[13:58:0] - [Инфо] comment id: 151582, task comment status: success
+[13:58:0] - [Инфо] Отправка данных в Спутник...
+[13:58:0] - [Инфо] task status: success, task time status: success
+[13:58:0] - [Инфо] SputnikTaskID: 29384
+[13:58:0] - [Инфо] comment id: 151583, task comment status: success
+[13:58:0] - [Инфо] comment id: 151584, task comment status: success
+[13:58:0] - [Инфо] Сущность с ID: 1093 обработана на сервере.
+[13:58:1] - [Инфо] Отправка данных в Спутник...
+[13:58:1] - [Инфо] task status: success, task time status: success
+[13:58:1] - [Инфо] SputnikTaskID: 29385
+[13:58:1] - [Инфо] comment id: 151585, task comment status: success
+[13:58:1] - [Инфо] Сущность с ID: 1094 обработана на сервере.
+[13:58:1] - [Инфо] Отправка данных в Спутник...
+[13:58:1] - [Инфо] task status: success, task time status: success
+[13:58:1] - [Инфо] SputnikTaskID: 29386
+[13:58:2] - [Инфо] Сущность с ID: 1095 обработана на сервере.
+[13:58:2] - [Инфо] comment id: 151586, task comment status: success
+[13:58:2] - [Инфо] Отправка данных в Спутник...
+[13:58:2] - [Инфо] task status: success, task time status: success
+[13:58:2] - [Инфо] SputnikTaskID: 29387
+[13:58:2] - [Инфо] comment id: 151587, task comment status: success
+[13:58:2] - [Инфо] Сущность с ID: 1096 обработана на сервере.
+[13:58:2] - [Инфо] comment id: 151588, task comment status: success
+[13:58:2] - [Инфо] Отправка данных в Спутник...
+[13:58:2] - [Инфо] task status: success, task time status: success
+[13:58:2] - [Инфо] SputnikTaskID: 29388
+[13:58:3] - [Инфо] comment id: 151589, task comment status: success
+[13:58:3] - [Инфо] Сущность с ID: 1097 обработана на сервере.
+[13:58:3] - [Инфо] Отправка данных в Спутник...
+[13:58:3] - [Инфо] task status: success, task time status: success
+[13:58:3] - [Инфо] SputnikTaskID: 29389
+[13:58:3] - [Инфо] comment id: 151590, task comment status: success
+[13:58:3] - [Инфо] Сущность с ID: 1098 обработана на сервере.
+[13:58:4] - [Инфо] Отправка данных в Спутник...
+[13:58:4] - [Инфо] task status: success, task time status: success
+[13:58:4] - [Инфо] SputnikTaskID: 29390
+[13:58:4] - [Инфо] comment id: 151591, task comment status: success
+[13:58:4] - [Инфо] Сущность с ID: 1099 обработана на сервере.
+[13:58:4] - [Инфо] Отправка данных в Спутник...
+[13:58:4] - [Инфо] task status: success, task time status: success
+[13:58:4] - [Инфо] SputnikTaskID: 29391
+[13:58:4] - [Инфо] Сущность с ID: 1100 обработана на сервере.
+[13:58:4] - [Инфо] comment id: 151592, task comment status: success
+[13:58:4] - [Инфо] Отправка данных в Спутник...
+[13:58:4] - [Инфо] task status: success, task time status: success
+[13:58:4] - [Инфо] SputnikTaskID: 29392
+[13:58:5] - [Инфо] comment id: 151593, task comment status: success
+[13:58:5] - [Инфо] comment id: 151594, task comment status: success
+[13:58:5] - [Инфо] Сущность с ID: 1101 обработана на сервере.
+[13:58:5] - [Инфо] comment id: 151595, task comment status: success
+[13:58:5] - [Инфо] Отправка данных в Спутник...
+[13:58:5] - [Инфо] task status: success, task time status: success
+[13:58:5] - [Инфо] SputnikTaskID: 29393
+[13:58:5] - [Инфо] comment id: 151596, task comment status: success
+[13:58:5] - [Инфо] Сущность с ID: 1102 обработана на сервере.
+[13:58:6] - [Инфо] comment id: 151597, task comment status: success
+[13:58:6] - [Инфо] Отправка данных в Спутник...
+[13:58:6] - [Инфо] task status: success, task time status: success
+[13:58:6] - [Инфо] SputnikTaskID: 29394
+[13:58:6] - [Инфо] comment id: 151598, task comment status: success
+[13:58:6] - [Инфо] comment id: 151599, task comment status: success
+[13:58:6] - [Инфо] comment id: 151600, task comment status: success
+[13:58:7] - [Инфо] Сущность с ID: 1103 обработана на сервере.
+[13:58:7] - [Инфо] Отправка данных в Спутник...
+[13:58:7] - [Инфо] task status: success, task time status: success
+[13:58:7] - [Инфо] SputnikTaskID: 29395
+[13:58:7] - [Инфо] comment id: 151601, task comment status: success
+[13:58:7] - [Инфо] comment id: 151602, task comment status: success
+[13:58:8] - [Инфо] comment id: 151603, task comment status: success
+[13:58:8] - [Инфо] Сущность с ID: 1104 обработана на сервере.
+[13:58:8] - [Инфо] comment id: 151604, task comment status: success
+[13:58:8] - [Инфо] Отправка данных в Спутник...
+[13:58:8] - [Инфо] task status: success, task time status: success
+[13:58:8] - [Инфо] SputnikTaskID: 29396
+[13:58:8] - [Инфо] comment id: 151605, task comment status: success
+[13:58:8] - [Инфо] comment id: 151606, task comment status: success
+[13:58:9] - [Инфо] Сущность с ID: 1105 обработана на сервере.
+[13:58:9] - [Инфо] Отправка данных в Спутник...
+[13:58:9] - [Инфо] task status: success, task time status: success
+[13:58:9] - [Инфо] SputnikTaskID: 29397
+[13:58:10] - [Инфо] comment id: 151607, task comment status: success
+[13:58:10] - [Инфо] Сущность с ID: 1106 обработана на сервере.
+[13:58:10] - [Инфо] comment id: 151608, task comment status: success
+[13:58:10] - [Инфо] Отправка данных в Спутник...
+[13:58:10] - [Инфо] task status: success, task time status: success
+[13:58:10] - [Инфо] SputnikTaskID: 29398
+[13:58:10] - [Инфо] comment id: 151609, task comment status: success
+[13:58:10] - [Инфо] comment id: 151610, task comment status: success
+[13:58:10] - [Инфо] Сущность с ID: 1107 обработана на сервере.
+[13:58:11] - [Инфо] Отправка данных в Спутник...
+[13:58:11] - [Инфо] task status: success, task time status: success
+[13:58:11] - [Инфо] SputnikTaskID: 29399
+[13:58:11] - [Инфо] comment id: 151611, task comment status: success
+[13:58:11] - [Инфо] Сущность с ID: 1108 обработана на сервере.
+[13:58:11] - [Инфо] Отправка данных в Спутник...
+[13:58:11] - [Инфо] task status: success, task time status: success
+[13:58:11] - [Инфо] SputnikTaskID: 29400
+[13:58:11] - [Инфо] Сущность с ID: 1109 обработана на сервере.
+[13:58:11] - [Инфо] comment id: 151612, task comment status: success
+[13:58:11] - [Инфо] comment id: 151613, task comment status: success
+[13:58:11] - [Инфо] Отправка данных в Спутник...
+[13:58:11] - [Инфо] task status: success, task time status: success
+[13:58:11] - [Инфо] SputnikTaskID: 29401
+[13:58:12] - [Инфо] comment id: 151614, task comment status: success
+[13:58:12] - [Инфо] comment id: 151616, task comment status: success
+[13:58:12] - [Инфо] comment id: 151615, task comment status: success
+[13:58:12] - [Инфо] comment id: 151617, task comment status: success
+[13:58:12] - [Инфо] Сущность с ID: 1110 обработана на сервере.
+[13:58:12] - [Инфо] Отправка данных в Спутник...
+[13:58:12] - [Инфо] task status: success, task time status: success
+[13:58:12] - [Инфо] SputnikTaskID: 29402
+[13:58:12] - [Инфо] comment id: 151618, task comment status: success
+[13:58:12] - [Инфо] Сущность с ID: 1111 обработана на сервере.
+[13:58:12] - [Инфо] comment id: 151619, task comment status: success
+[13:58:13] - [Инфо] Отправка данных в Спутник...
+[13:58:13] - [Инфо] task status: success, task time status: success
+[13:58:13] - [Инфо] SputnikTaskID: 29403
+[13:58:13] - [Инфо] comment id: 151620, task comment status: success
+[13:58:13] - [Инфо] comment id: 151621, task comment status: success
+[13:58:13] - [Инфо] comment id: 151622, task comment status: success
+[13:58:13] - [Инфо] Сущность с ID: 1112 обработана на сервере.
+[13:58:13] - [Инфо] Отправка данных в Спутник...
+[13:58:13] - [Инфо] task status: success, task time status: success
+[13:58:13] - [Инфо] SputnikTaskID: 29404
+[13:58:13] - [Инфо] comment id: 151623, task comment status: success
+[13:58:14] - [Инфо] Сущность с ID: 1113 обработана на сервере.
+[13:58:14] - [Инфо] Отправка данных в Спутник...
+[13:58:14] - [Инфо] task status: success, task time status: success
+[13:58:14] - [Инфо] SputnikTaskID: 29405
+[13:58:14] - [Инфо] comment id: 151624, task comment status: success
+[13:58:14] - [Инфо] Сущность с ID: 1114 обработана на сервере.
+[13:58:14] - [Инфо] Отправка данных в Спутник...
+[13:58:14] - [Инфо] task status: success, task time status: success
+[13:58:14] - [Инфо] SputnikTaskID: 29406
+[13:58:14] - [Инфо] comment id: 151625, task comment status: success
+[13:58:15] - [Инфо] Сущность с ID: 1115 обработана на сервере.
+[13:58:15] - [Инфо] Отправка данных в Спутник...
+[13:58:15] - [Инфо] task status: success, task time status: success
+[13:58:15] - [Инфо] SputnikTaskID: 29407
+[13:58:15] - [Инфо] comment id: 151626, task comment status: success
+[13:58:15] - [Инфо] Сущность с ID: 1116 обработана на сервере.
+[13:58:15] - [Инфо] comment id: 151627, task comment status: success
+[13:58:15] - [Инфо] Отправка данных в Спутник...
+[13:58:15] - [Инфо] task status: success, task time status: success
+[13:58:15] - [Инфо] SputnikTaskID: 29408
+[13:58:16] - [Инфо] comment id: 151628, task comment status: success
+[13:58:16] - [Инфо] Сущность с ID: 1117 обработана на сервере.
+[13:58:16] - [Инфо] Отправка данных в Спутник...
+[13:58:16] - [Инфо] task status: success, task time status: success
+[13:58:16] - [Инфо] SputnikTaskID: 29409
+[13:58:16] - [Инфо] comment id: 151629, task comment status: success
+[13:58:16] - [Инфо] Сущность с ID: 1118 обработана на сервере.
+[13:58:16] - [Инфо] Отправка данных в Спутник...
+[13:58:16] - [Инфо] task status: success, task time status: success
+[13:58:16] - [Инфо] SputnikTaskID: 29410
+[13:58:17] - [Инфо] Сущность с ID: 1119 обработана на сервере.
+[13:58:17] - [Инфо] comment id: 151630, task comment status: success
+[13:58:17] - [Инфо] comment id: 151631, task comment status: success
+[13:58:17] - [Инфо] Отправка данных в Спутник...
+[13:58:17] - [Инфо] task status: success, task time status: success
+[13:58:17] - [Инфо] SputnikTaskID: 29411
+[13:58:17] - [Инфо] Сущность с ID: 1120 обработана на сервере.
+[13:58:17] - [Инфо] comment id: 151632, task comment status: success
+[13:58:18] - [Инфо] Отправка данных в Спутник...
+[13:58:18] - [Инфо] task status: success, task time status: success
+[13:58:18] - [Инфо] SputnikTaskID: 29412
+[13:58:18] - [Инфо] Сущность с ID: 1121 обработана на сервере.
+[13:58:18] - [Инфо] comment id: 151633, task comment status: success
+[13:58:18] - [Инфо] Отправка данных в Спутник...
+[13:58:18] - [Инфо] task status: success, task time status: success
+[13:58:18] - [Инфо] SputnikTaskID: 29413
+[13:58:18] - [Инфо] comment id: 151634, task comment status: success
+[13:58:18] - [Инфо] Сущность с ID: 1122 обработана на сервере.
+[13:58:18] - [Инфо] comment id: 151635, task comment status: success
+[13:58:19] - [Инфо] Отправка данных в Спутник...
+[13:58:19] - [Инфо] task status: success, task time status: success
+[13:58:19] - [Инфо] SputnikTaskID: 29414
+[13:58:19] - [Инфо] Сущность с ID: 1123 обработана на сервере.
+[13:58:19] - [Инфо] comment id: 151636, task comment status: success
+[13:58:19] - [Инфо] Отправка данных в Спутник...
+[13:58:19] - [Инфо] task status: success, task time status: success
+[13:58:19] - [Инфо] SputnikTaskID: 29415
+[13:58:19] - [Инфо] comment id: 151637, task comment status: success
+[13:58:20] - [Инфо] Сущность с ID: 1124 обработана на сервере.
+[13:58:20] - [Инфо] Отправка данных в Спутник...
+[13:58:20] - [Инфо] task status: success, task time status: success
+[13:58:20] - [Инфо] SputnikTaskID: 29416
+[13:58:20] - [Инфо] comment id: 151638, task comment status: success
+[13:58:20] - [Инфо] comment id: 151639, task comment status: success
+[13:58:20] - [Инфо] Сущность с ID: 1125 обработана на сервере.
+[13:58:20] - [Инфо] Отправка данных в Спутник...
+[13:58:20] - [Инфо] task status: success, task time status: success
+[13:58:20] - [Инфо] SputnikTaskID: 29417
+[13:58:21] - [Инфо] comment id: 151640, task comment status: success
+[13:58:21] - [Инфо] Сущность с ID: 1126 обработана на сервере.
+[13:58:21] - [Инфо] Отправка данных в Спутник...
+[13:58:21] - [Инфо] task status: success, task time status: success
+[13:58:21] - [Инфо] SputnikTaskID: 29418
+[13:58:22] - [Инфо] comment id: 151641, task comment status: success
+[13:58:22] - [Инфо] Сущность с ID: 1127 обработана на сервере.
+[13:58:22] - [Инфо] Отправка данных в Спутник...
+[13:58:22] - [Инфо] task status: success, task time status: success
+[13:58:22] - [Инфо] SputnikTaskID: 29419
+[13:58:22] - [Инфо] comment id: 151642, task comment status: success
+[13:58:22] - [Инфо] Сущность с ID: 1128 обработана на сервере.
+[13:58:23] - [Инфо] Отправка данных в Спутник...
+[13:58:23] - [Инфо] task status: success, task time status: success
+[13:58:23] - [Инфо] SputnikTaskID: 29420
+[13:58:23] - [Инфо] comment id: 151643, task comment status: success
+[13:58:23] - [Инфо] Сущность с ID: 1129 обработана на сервере.
+[13:58:23] - [Инфо] Отправка данных в Спутник...
+[13:58:23] - [Инфо] task status: success, task time status: success
+[13:58:23] - [Инфо] SputnikTaskID: 29421
+[13:58:23] - [Инфо] comment id: 151644, task comment status: success
+[13:58:24] - [Инфо] Сущность с ID: 1130 обработана на сервере.
+[13:58:24] - [Инфо] Отправка данных в Спутник...
+[13:58:24] - [Инфо] task status: success, task time status: success
+[13:58:24] - [Инфо] SputnikTaskID: 29422
+[13:58:24] - [Инфо] comment id: 151645, task comment status: success
+[13:58:24] - [Инфо] [Ошибка] Заявка не является завершненной (OkDesk ID: 1131) Пропуск...
+[13:58:24] - [Инфо] comment id: 151646, task comment status: success
+[13:58:24] - [Инфо] comment id: 151647, task comment status: success
+[13:58:25] - [Инфо] Сущность с ID: 1132 обработана на сервере.
+[13:58:25] - [Инфо] Отправка данных в Спутник...
+[13:58:25] - [Инфо] task status: success, task time status: success
+[13:58:25] - [Инфо] SputnikTaskID: 29423
+[13:58:25] - [Инфо] comment id: 151648, task comment status: success
+[13:58:25] - [Инфо] Сущность с ID: 1133 обработана на сервере.
+[13:58:25] - [Инфо] Отправка данных в Спутник...
+[13:58:25] - [Инфо] task status: success, task time status: success
+[13:58:25] - [Инфо] SputnikTaskID: 29424
+[13:58:26] - [Инфо] comment id: 151649, task comment status: success
+[13:58:26] - [Инфо] Сущность с ID: 1134 обработана на сервере.
+[13:58:26] - [Инфо] Отправка данных в Спутник...
+[13:58:26] - [Инфо] task status: success, task time status: success
+[13:58:26] - [Инфо] SputnikTaskID: 29425
+[13:58:26] - [Инфо] comment id: 151650, task comment status: success
+[13:58:26] - [Инфо] Сущность с ID: 1135 обработана на сервере.
+[13:58:26] - [Инфо] Отправка данных в Спутник...
+[13:58:26] - [Инфо] task status: success, task time status: success
+[13:58:26] - [Инфо] SputnikTaskID: 29426
+[13:58:27] - [Инфо] comment id: 151651, task comment status: success
+[13:58:27] - [Ошибка] Не найдено ID клиента (OkDesk ID: 1136) Пропуск..., пожалуйста исправьте ошибку, пожалуйста исправьте ошибку.
+[13:58:27] - [Инфо] Сущность с ID: 1137 обработана на сервере.
+[13:58:28] - [Инфо] Отправка данных в Спутник...
+[13:58:28] - [Инфо] task status: success, task time status: success
+[13:58:28] - [Инфо] SputnikTaskID: 29427
+[13:58:28] - [Инфо] Сущность с ID: 1138 обработана на сервере.
+[13:58:28] - [Инфо] comment id: 151652, task comment status: success
+[13:58:28] - [Инфо] Отправка данных в Спутник...
+[13:58:28] - [Инфо] task status: success, task time status: success
+[13:58:28] - [Инфо] SputnikTaskID: 29428
+[13:58:28] - [Инфо] Сущность с ID: 1139 обработана на сервере.
+[13:58:28] - [Инфо] comment id: 151653, task comment status: success
+[13:58:29] - [Инфо] Отправка данных в Спутник...
+[13:58:29] - [Инфо] task status: success, task time status: success
+[13:58:29] - [Инфо] SputnikTaskID: 29429
+[13:58:29] - [Инфо] comment id: 151654, task comment status: success
+[13:58:29] - [Инфо] comment id: 151655, task comment status: success
+[13:58:29] - [Инфо] comment id: 151656, task comment status: success
+[13:58:29] - [Инфо] comment id: 151657, task comment status: success
+[13:58:29] - [Инфо] Сущность с ID: 1140 обработана на сервере.
+[13:58:29] - [Инфо] comment id: 151658, task comment status: success
+[13:58:29] - [Инфо] Отправка данных в Спутник...
+[13:58:29] - [Инфо] task status: success, task time status: success
+[13:58:29] - [Инфо] SputnikTaskID: 29430
+[13:58:29] - [Инфо] comment id: 151659, task comment status: success
+[13:58:30] - [Инфо] comment id: 151660, task comment status: success
+[13:58:30] - [Инфо] Сущность с ID: 1141 обработана на сервере.
+[13:58:30] - [Инфо] Отправка данных в Спутник...
+[13:58:30] - [Инфо] task status: success, task time status: success
+[13:58:30] - [Инфо] SputnikTaskID: 29431
+[13:58:30] - [Инфо] comment id: 151661, task comment status: success
+[13:58:30] - [Инфо] Сущность с ID: 1142 обработана на сервере.
+[13:58:30] - [Инфо] comment id: 151662, task comment status: success
+[13:58:31] - [Инфо] Отправка данных в Спутник...
+[13:58:31] - [Инфо] task status: success, task time status: success
+[13:58:31] - [Инфо] SputnikTaskID: 29432
+[13:58:31] - [Инфо] Сущность с ID: 1143 обработана на сервере.
+[13:58:31] - [Инфо] comment id: 151663, task comment status: success
+[13:58:31] - [Инфо] Отправка данных в Спутник...
+[13:58:31] - [Инфо] task status: success, task time status: success
+[13:58:31] - [Инфо] SputnikTaskID: 29433
+[13:58:31] - [Инфо] Сущность с ID: 1144 обработана на сервере.
+[13:58:31] - [Инфо] comment id: 151664, task comment status: success
+[13:58:32] - [Инфо] Отправка данных в Спутник...
+[13:58:32] - [Инфо] task status: success, task time status: success
+[13:58:32] - [Инфо] SputnikTaskID: 29434
+[13:58:32] - [Инфо] comment id: 151665, task comment status: success
+[13:58:32] - [Инфо] Сущность с ID: 1145 обработана на сервере.
+[13:58:32] - [Инфо] Отправка данных в Спутник...
+[13:58:32] - [Инфо] task status: success, task time status: success
+[13:58:32] - [Инфо] SputnikTaskID: 29435
+[13:58:33] - [Инфо] comment id: 151666, task comment status: success
+[13:58:33] - [Инфо] Сущность с ID: 1146 обработана на сервере.
+[13:58:33] - [Инфо] Отправка данных в Спутник...
+[13:58:33] - [Инфо] task status: success, task time status: success
+[13:58:33] - [Инфо] SputnikTaskID: 29436
+[13:58:33] - [Инфо] Сущность с ID: 1147 обработана на сервере.
+[13:58:33] - [Инфо] comment id: 151667, task comment status: success
+[13:58:33] - [Инфо] Отправка данных в Спутник...
+[13:58:33] - [Инфо] task status: success, task time status: success
+[13:58:33] - [Инфо] SputnikTaskID: 29437
+[13:58:34] - [Инфо] Сущность с ID: 1148 обработана на сервере.
+[13:58:34] - [Инфо] comment id: 151668, task comment status: success
+[13:58:34] - [Инфо] Отправка данных в Спутник...
+[13:58:34] - [Инфо] task status: success, task time status: success
+[13:58:34] - [Инфо] SputnikTaskID: 29438
+[13:58:34] - [Инфо] comment id: 151669, task comment status: success
+[13:58:34] - [Инфо] Сущность с ID: 1149 обработана на сервере.
+[13:58:34] - [Инфо] comment id: 151670, task comment status: success
+[13:58:34] - [Инфо] Отправка данных в Спутник...
+[13:58:34] - [Инфо] task status: success, task time status: success
+[13:58:34] - [Инфо] SputnikTaskID: 29439
+[13:58:35] - [Ошибка] Не найдено ID клиента (OkDesk ID: 1150) Пропуск..., пожалуйста исправьте ошибку, пожалуйста исправьте ошибку.
+[13:58:35] - [Инфо] comment id: 151671, task comment status: success
+[13:58:35] - [Инфо] comment id: 151672, task comment status: success
+[13:58:35] - [Инфо] comment id: 151673, task comment status: success
+[13:58:35] - [Инфо] comment id: 151674, task comment status: success
+[13:58:35] - [Инфо] Сущность с ID: 1151 обработана на сервере.
+[13:58:36] - [Инфо] Отправка данных в Спутник...
+[13:58:36] - [Инфо] task status: success, task time status: success
+[13:58:36] - [Инфо] SputnikTaskID: 29440
+[13:58:36] - [Инфо] comment id: 151675, task comment status: success
+[13:58:36] - [Ошибка] Не найдено ID клиента (OkDesk ID: 1152) Пропуск..., пожалуйста исправьте ошибку, пожалуйста исправьте ошибку.
+[13:58:37] - [Инфо] Сущность с ID: 1153 обработана на сервере.
+[13:58:37] - [Инфо] Отправка данных в Спутник...
+[13:58:37] - [Инфо] task status: success, task time status: success
+[13:58:37] - [Инфо] SputnikTaskID: 29441
+[13:58:38] - [Инфо] comment id: 151676, task comment status: success
+[13:58:38] - [Инфо] [Ошибка] Заявка не является завершненной (OkDesk ID: 1154) Пропуск...
+[13:58:38] - [Инфо] comment id: 151677, task comment status: success
+[13:58:39] - [Инфо] Сущность с ID: 1155 обработана на сервере.
+[13:58:39] - [Инфо] Отправка данных в Спутник...
+[13:58:39] - [Инфо] task status: success, task time status: success
+[13:58:39] - [Инфо] SputnikTaskID: 29442
+[13:58:39] - [Инфо] Сущность с ID: 1156 обработана на сервере.
+[13:58:39] - [Инфо] Отправка данных в Спутник...
+[13:58:39] - [Инфо] task status: success, task time status: success
+[13:58:39] - [Инфо] SputnikTaskID: 29443
+[13:58:40] - [Инфо] comment id: 151678, task comment status: success
+[13:58:40] - [Инфо] Сущность с ID: 1157 обработана на сервере.
+[13:58:40] - [Инфо] comment id: 151679, task comment status: success
+[13:58:40] - [Инфо] Отправка данных в Спутник...
+[13:58:40] - [Инфо] task status: success, task time status: success
+[13:58:40] - [Инфо] SputnikTaskID: 29444
+[13:58:40] - [Инфо] [Ошибка] Заявка не является завершненной (OkDesk ID: 1158) Пропуск...
+[13:58:41] - [Инфо] Сущность с ID: 1159 обработана на сервере.
+[13:58:41] - [Инфо] Отправка данных в Спутник...
+[13:58:41] - [Инфо] task status: success, task time status: success
+[13:58:41] - [Инфо] SputnikTaskID: 29445
+[13:58:41] - [Инфо] comment id: 151680, task comment status: success
+[13:58:41] - [Инфо] Сущность с ID: 1160 обработана на сервере.
+[13:58:42] - [Инфо] Отправка данных в Спутник...
+[13:58:42] - [Инфо] task status: success, task time status: success
+[13:58:42] - [Инфо] SputnikTaskID: 29446
+[13:58:42] - [Инфо] comment id: 151681, task comment status: success
+[13:58:42] - [Инфо] Сущность с ID: 1161 обработана на сервере.
+[13:58:42] - [Инфо] Отправка данных в Спутник...
+[13:58:42] - [Инфо] task status: success, task time status: success
+[13:58:42] - [Инфо] SputnikTaskID: 29447
+[13:58:42] - [Инфо] Сущность с ID: 1162 обработана на сервере.
+[13:58:42] - [Инфо] comment id: 151682, task comment status: success
+[13:58:43] - [Инфо] comment id: 151683, task comment status: success
+[13:58:43] - [Инфо] Отправка данных в Спутник...
+[13:58:43] - [Инфо] task status: success, task time status: success
+[13:58:43] - [Инфо] SputnikTaskID: 29448
+[13:58:43] - [Инфо] comment id: 151684, task comment status: success
+[13:58:43] - [Инфо] comment id: 151685, task comment status: success
+[13:58:43] - [Инфо] Сущность с ID: 1163 обработана на сервере.
+[13:58:43] - [Инфо] Отправка данных в Спутник...
+[13:58:43] - [Инфо] task status: success, task time status: success
+[13:58:43] - [Инфо] SputnikTaskID: 29449
+[13:58:44] - [Инфо] comment id: 151686, task comment status: success
+[13:58:44] - [Инфо] Сущность с ID: 1164 обработана на сервере.
+[13:58:44] - [Инфо] Сущность с ID: 1165 обработана на сервере.
+[13:58:44] - [Инфо] Отправка данных в Спутник...
+[13:58:44] - [Инфо] task status: success, task time status: success
+[13:58:44] - [Инфо] SputnikTaskID: 29450
+[13:58:45] - [Инфо] comment id: 151687, task comment status: success
+[13:58:45] - [Инфо] Сущность с ID: 1166 обработана на сервере.
+[13:58:45] - [Инфо] Отправка данных в Спутник...
+[13:58:45] - [Инфо] task status: success, task time status: success
+[13:58:45] - [Инфо] SputnikTaskID: 29451
+[13:58:45] - [Инфо] comment id: 151688, task comment status: success
+[13:58:45] - [Инфо] Сущность с ID: 1167 обработана на сервере.
+[13:58:46] - [Инфо] Отправка данных в Спутник...
+[13:58:46] - [Инфо] task status: success, task time status: success
+[13:58:46] - [Инфо] SputnikTaskID: 29452
+[13:58:46] - [Инфо] comment id: 151689, task comment status: success
+[13:58:46] - [Инфо] Сущность с ID: 1168 обработана на сервере.
+[13:58:46] - [Инфо] Отправка данных в Спутник...
+[13:58:46] - [Инфо] task status: success, task time status: success
+[13:58:46] - [Инфо] SputnikTaskID: 29453
+[13:58:47] - [Инфо] comment id: 151690, task comment status: success
+[13:58:47] - [Инфо] Сущность с ID: 1169 обработана на сервере.
+[13:58:47] - [Инфо] Отправка данных в Спутник...
+[13:58:47] - [Инфо] task status: success, task time status: success
+[13:58:47] - [Инфо] SputnikTaskID: 29454
+[13:58:47] - [Инфо] comment id: 151691, task comment status: success
+[13:58:47] - [Инфо] Сущность с ID: 1170 обработана на сервере.
+[13:58:47] - [Инфо] Отправка данных в Спутник...
+[13:58:47] - [Инфо] task status: success, task time status: success
+[13:58:47] - [Инфо] SputnikTaskID: 29455
+[13:58:48] - [Инфо] comment id: 151692, task comment status: success
+[13:58:48] - [Инфо] Сущность с ID: 1171 обработана на сервере.
+[13:58:48] - [Инфо] Отправка данных в Спутник...
+[13:58:48] - [Инфо] task status: success, task time status: success
+[13:58:48] - [Инфо] SputnikTaskID: 29456
+[13:58:48] - [Инфо] comment id: 151693, task comment status: success
+[13:58:48] - [Инфо] Сущность с ID: 1172 обработана на сервере.
+[13:58:49] - [Инфо] Отправка данных в Спутник...
+[13:58:49] - [Инфо] task status: success, task time status: success
+[13:58:49] - [Инфо] SputnikTaskID: 29457
+[13:58:49] - [Инфо] Сущность с ID: 1173 обработана на сервере.
+[13:58:49] - [Инфо] Отправка данных в Спутник...
+[13:58:49] - [Инфо] task status: success, task time status: success
+[13:58:49] - [Инфо] SputnikTaskID: 29458
+[13:58:49] - [Инфо] comment id: 151694, task comment status: success
+[13:58:49] - [Инфо] Сущность с ID: 1174 обработана на сервере.
+[13:58:49] - [Инфо] comment id: 151695, task comment status: success
+[13:58:50] - [Инфо] Отправка данных в Спутник...
+[13:58:50] - [Инфо] task status: success, task time status: success
+[13:58:50] - [Инфо] SputnikTaskID: 29459
+[13:58:50] - [Инфо] comment id: 151696, task comment status: success
+[13:58:50] - [Инфо] Сущность с ID: 1175 обработана на сервере.
+[13:58:50] - [Инфо] Отправка данных в Спутник...
+[13:58:50] - [Инфо] task status: success, task time status: success
+[13:58:50] - [Инфо] SputnikTaskID: 29460
+[13:58:51] - [Инфо] comment id: 151697, task comment status: success
+[13:58:51] - [Инфо] Сущность с ID: 1176 обработана на сервере.
+[13:58:51] - [Инфо] Отправка данных в Спутник...
+[13:58:51] - [Инфо] task status: success, task time status: success
+[13:58:51] - [Инфо] SputnikTaskID: 29461
+[13:58:51] - [Инфо] [Ошибка] Заявка не является завершненной (OkDesk ID: 1177) Пропуск...
+[13:58:51] - [Инфо] comment id: 151698, task comment status: success
+[13:58:52] - [Инфо] [Ошибка] Заявка не является завершненной (OkDesk ID: 1178) Пропуск...
+[13:58:52] - [Инфо] Сущность с ID: 1179 обработана на сервере.
+[13:58:52] - [Инфо] Отправка данных в Спутник...
+[13:58:52] - [Инфо] task status: success, task time status: success
+[13:58:52] - [Инфо] SputnikTaskID: 29462
+[13:58:53] - [Инфо] comment id: 151699, task comment status: success
+[13:58:53] - [Инфо] Сущность с ID: 1180 обработана на сервере.
+[13:58:53] - [Инфо] Отправка данных в Спутник...
+[13:58:53] - [Инфо] task status: success, task time status: success
+[13:58:53] - [Инфо] SputnikTaskID: 29463
+[13:58:53] - [Инфо] comment id: 151700, task comment status: success
+[13:58:54] - [Инфо] Сущность с ID: 1181 обработана на сервере.
+[13:58:54] - [Инфо] Отправка данных в Спутник...
+[13:58:54] - [Инфо] task status: success, task time status: success
+[13:58:54] - [Инфо] SputnikTaskID: 29464
+[13:58:54] - [Инфо] comment id: 151701, task comment status: success
+[13:58:54] - [Инфо] Сущность с ID: 1182 обработана на сервере.
+[13:58:54] - [Инфо] Отправка данных в Спутник...
+[13:58:54] - [Инфо] task status: success, task time status: success
+[13:58:54] - [Инфо] SputnikTaskID: 29465
+[13:58:55] - [Инфо] comment id: 151702, task comment status: success
+[13:58:55] - [Инфо] Сущность с ID: 1183 обработана на сервере.
+[13:58:55] - [Инфо] Отправка данных в Спутник...
+[13:58:55] - [Инфо] task status: success, task time status: success
+[13:58:55] - [Инфо] SputnikTaskID: 29466
+[13:58:55] - [Инфо] comment id: 151703, task comment status: success
+[13:58:55] - [Инфо] comment id: 151704, task comment status: success
+[13:58:56] - [Инфо] Сущность с ID: 1184 обработана на сервере.
+[13:58:56] - [Инфо] comment id: 151705, task comment status: success
+[13:58:56] - [Инфо] Отправка данных в Спутник...
+[13:58:56] - [Инфо] task status: success, task time status: success
+[13:58:56] - [Инфо] SputnikTaskID: 29467
+[13:58:56] - [Инфо] comment id: 151706, task comment status: success
+[13:58:56] - [Инфо] Сущность с ID: 1185 обработана на сервере.
+[13:58:57] - [Инфо] Отправка данных в Спутник...
+[13:58:57] - [Инфо] task status: success, task time status: success
+[13:58:57] - [Инфо] SputnikTaskID: 29468
+[13:58:57] - [Инфо] comment id: 151707, task comment status: success
+[13:58:57] - [Инфо] Сущность с ID: 1186 обработана на сервере.
+[13:58:57] - [Инфо] comment id: 151708, task comment status: success
+[13:58:57] - [Инфо] Отправка данных в Спутник...
+[13:58:57] - [Инфо] task status: success, task time status: success
+[13:58:57] - [Инфо] SputnikTaskID: 29469
+[13:58:57] - [Инфо] comment id: 151709, task comment status: success
+[13:58:57] - [Инфо] [Ошибка] Заявка не является завершненной (OkDesk ID: 1187) Пропуск...
+[13:58:57] - [Инфо] comment id: 151710, task comment status: success
+[13:58:58] - [Инфо] comment id: 151711, task comment status: success
+[13:58:58] - [Инфо] comment id: 151712, task comment status: success
+[13:58:58] - [Инфо] comment id: 151713, task comment status: success
+[13:58:58] - [Инфо] comment id: 151714, task comment status: success
+[13:58:58] - [Инфо] Сущность с ID: 1188 обработана на сервере.
+[13:58:58] - [Инфо] comment id: 151715, task comment status: success
+[13:58:58] - [Инфо] comment id: 151716, task comment status: success
+[13:58:58] - [Инфо] Отправка данных в Спутник...
+[13:58:58] - [Инфо] task status: success, task time status: success
+[13:58:58] - [Инфо] SputnikTaskID: 29470
+[13:58:59] - [Инфо] comment id: 151717, task comment status: success
+[13:58:59] - [Инфо] Сущность с ID: 1189 обработана на сервере.
+[13:58:59] - [Инфо] comment id: 151718, task comment status: success
+[13:58:59] - [Инфо] Отправка данных в Спутник...
+[13:58:59] - [Инфо] task status: success, task time status: success
+[13:58:59] - [Инфо] SputnikTaskID: 29471
+[13:58:59] - [Инфо] comment id: 151719, task comment status: success
+[13:58:59] - [Инфо] comment id: 151720, task comment status: success
+[13:59:0] - [Инфо] Сущность с ID: 1190 обработана на сервере.
+[13:59:0] - [Инфо] Отправка данных в Спутник...
+[13:59:0] - [Инфо] task status: success, task time status: success
+[13:59:0] - [Инфо] SputnikTaskID: 29472
+[13:59:0] - [Инфо] comment id: 151721, task comment status: success
+[13:59:0] - [Ошибка] Не найдено ID клиента (OkDesk ID: 1191) Пропуск..., пожалуйста исправьте ошибку, пожалуйста исправьте ошибку.
+[13:59:0] - [Инфо] comment id: 151722, task comment status: success
+[13:59:1] - [Инфо] Сущность с ID: 1192 обработана на сервере.
+[13:59:1] - [Инфо] Отправка данных в Спутник...
+[13:59:1] - [Инфо] task status: success, task time status: success
+[13:59:1] - [Инфо] SputnikTaskID: 29473
+[13:59:2] - [Инфо] Сущность с ID: 1193 обработана на сервере.
+[13:59:2] - [Инфо] comment id: 151723, task comment status: success
+[13:59:2] - [Инфо] Отправка данных в Спутник...
+[13:59:2] - [Инфо] task status: success, task time status: success
+[13:59:2] - [Инфо] SputnikTaskID: 29474
+[13:59:2] - [Инфо] [Ошибка] Заявка не является завершненной (OkDesk ID: 1194) Пропуск...
+[13:59:2] - [Инфо] Загрузка локальных данных закончена.
+[13:59:2] - [Инфо] Обмен данными между OkDesk и Спутник завершен.
+[13:59:3] - [Инфо] comment id: 151724, task comment status: success
+[13:59:3] - [Инфо] comment id: 151725, task comment status: success
+[13:59:3] - [Инфо] comment id: 151726, task comment status: success
+[13:59:3] - [Инфо] comment id: 151727, task comment status: success
+[13:59:4] - [Инфо] comment id: 151728, task comment status: success
+[13:59:4] - [Инфо] comment id: 151729, task comment status: success
+[13:59:5] - [Инфо] comment id: 151730, task comment status: success
+[14:4:51] - [Инфо] Developer - Mkrtchyan Martun <mart@kassa26.ru>
+[14:4:51] - [Инфо] Начало обмена данными между OkDesk и Спутник.
+[14:4:51] - [Инфо] Начало загрузки локальных данных.
+[14:4:52] - [Инфо] [Ошибка] Заявка уже была ранее выгружена. (OkDesk ID: 1027) Пропуск...
+[14:4:52] - [Инфо] [Ошибка] Заявка уже была ранее выгружена. (OkDesk ID: 1028) Пропуск...
+[14:4:53] - [Инфо] [Ошибка] Заявка уже была ранее выгружена. (OkDesk ID: 1029) Пропуск...
+[14:4:53] - [Инфо] Загрузка локальных данных закончена.
+[14:4:53] - [Инфо] Обмен данными между OkDesk и Спутник завершен.
+[14:15:42] - [Инфо] Developer - Mkrtchyan Martun <mart@kassa26.ru>
+[14:15:42] - [Инфо] Начало обмена данными между OkDesk и Спутник.
+[14:15:42] - [Инфо] Начало загрузки локальных данных.
+[14:15:42] - [Инфо] [OkDesk] Файл: '1027-1029data.json' - уже существует в 'data/okdesk'
+[14:15:42] - [Инфо] [Ошибка] Заявка уже была ранее выгружена. (OkDesk ID: 1027) Пропуск...
+[14:15:43] - [Инфо] [Ошибка] Заявка уже была ранее выгружена. (OkDesk ID: 1028) Пропуск...
+[14:15:43] - [Инфо] [Ошибка] Заявка уже была ранее выгружена. (OkDesk ID: 1029) Пропуск...
+[14:15:43] - [Инфо] Загрузка локальных данных закончена.
+[14:15:43] - [Инфо] Обмен данными между OkDesk и Спутник завершен.
+[17:56:24] - [Инфо] Developer - Mkrtchyan Martun <mart@kassa26.ru>
+[17:56:24] - [Инфо] Начало обмена данными между OkDesk и Спутник.
+[17:56:24] - [Инфо] Начало загрузки локальных данных.
+[17:56:24] - [Инфо] [OkDesk] Файл: '2-3data.json' - уже существует в 'data/okdesk'
+[17:56:24] - Записи 2 не существует, пожалуйста исправьте ошибку, пожалуйста исправьте ошибку.
+[17:56:24] - Записи 2 не существует, пожалуйста исправьте ошибку, пожалуйста исправьте ошибку.
+[17:58:29] - [Инфо] Developer - Mkrtchyan Martun <mart@kassa26.ru>
+[17:58:29] - [Инфо] Начало обмена данными между OkDesk и Спутник.
+[17:58:29] - [Инфо] Начало загрузки локальных данных.
+[17:58:29] - [Инфо] [OkDesk] Файл: '1024-1194data.json' - уже существует в 'data/okdesk'
+[17:58:29] - [Инфо] [Ошибка] Заявка уже была ранее выгружена. (OkDesk ID: 1024) Пропуск...
+[17:58:29] - [Инфо] [Ошибка] Заявка уже была ранее выгружена. (OkDesk ID: 1025) Пропуск...
+[17:58:30] - [Ошибка] Не найдено ID клиента (OkDesk ID: 1026) Пропуск..., пожалуйста исправьте ошибку, пожалуйста исправьте ошибку.
+[17:58:31] - [Инфо] [Ошибка] Заявка уже была ранее выгружена. (OkDesk ID: 1027) Пропуск...
+[17:58:31] - [Инфо] [Ошибка] Заявка уже была ранее выгружена. (OkDesk ID: 1028) Пропуск...
+[17:58:31] - [Инфо] [Ошибка] Заявка уже была ранее выгружена. (OkDesk ID: 1029) Пропуск...
+[17:58:31] - [Инфо] [Ошибка] Заявка уже была ранее выгружена. (OkDesk ID: 1030) Пропуск...
+[17:58:32] - [Инфо] [Ошибка] Заявка уже была ранее выгружена. (OkDesk ID: 1031) Пропуск...
+[17:58:32] - [Инфо] [Ошибка] Заявка уже была ранее выгружена. (OkDesk ID: 1032) Пропуск...
+[17:58:33] - [Инфо] [Ошибка] Заявка уже была ранее выгружена. (OkDesk ID: 1033) Пропуск...
+[17:58:33] - [Инфо] [Ошибка] Заявка уже была ранее выгружена. (OkDesk ID: 1034) Пропуск...
+[17:58:33] - [Инфо] [Ошибка] Заявка уже была ранее выгружена. (OkDesk ID: 1035) Пропуск...
+[17:58:33] - Записи 1036 не существует, пожалуйста исправьте ошибку, пожалуйста исправьте ошибку.
+[17:58:34] - [Инфо] [Ошибка] Заявка уже была ранее выгружена. (OkDesk ID: 1024) Пропуск...
+[17:58:34] - [Инфо] [Ошибка] Заявка уже была ранее выгружена. (OkDesk ID: 1025) Пропуск...
+[17:58:35] - [Ошибка] Не найдено ID клиента (OkDesk ID: 1026) Пропуск..., пожалуйста исправьте ошибку, пожалуйста исправьте ошибку.
+[17:58:35] - [Инфо] [Ошибка] Заявка уже была ранее выгружена. (OkDesk ID: 1027) Пропуск...
+[17:58:36] - [Инфо] [Ошибка] Заявка уже была ранее выгружена. (OkDesk ID: 1028) Пропуск...
+[17:58:36] - [Инфо] [Ошибка] Заявка уже была ранее выгружена. (OkDesk ID: 1029) Пропуск...
+[17:58:37] - [Инфо] [Ошибка] Заявка уже была ранее выгружена. (OkDesk ID: 1030) Пропуск...
+[17:58:37] - [Инфо] [Ошибка] Заявка уже была ранее выгружена. (OkDesk ID: 1031) Пропуск...
+[17:58:37] - [Инфо] [Ошибка] Заявка уже была ранее выгружена. (OkDesk ID: 1032) Пропуск...
+[17:58:38] - [Инфо] [Ошибка] Заявка уже была ранее выгружена. (OkDesk ID: 1033) Пропуск...
+[17:58:38] - [Инфо] [Ошибка] Заявка уже была ранее выгружена. (OkDesk ID: 1034) Пропуск...
+[17:58:39] - [Инфо] [Ошибка] Заявка уже была ранее выгружена. (OkDesk ID: 1035) Пропуск...
+[17:58:39] - Записи 1036 не существует, пожалуйста исправьте ошибку, пожалуйста исправьте ошибку.
+[18:1:43] - [Инфо] Developer - Mkrtchyan Martun <mart@kassa26.ru>
+[18:1:43] - [Инфо] Начало обмена данными между OkDesk и Спутник.
+[18:1:43] - [Инфо] Начало загрузки локальных данных.
+[18:1:44] - Записи 1036 не существует, пожалуйста исправьте ошибку, пожалуйста исправьте ошибку.
+[18:1:54] - [Инфо] Developer - Mkrtchyan Martun <mart@kassa26.ru>
+[18:1:54] - [Инфо] Начало обмена данными между OkDesk и Спутник.
+[18:1:54] - [Инфо] Начало загрузки локальных данных.
+[18:1:54] - Записи 1036 не существует, пожалуйста исправьте ошибку, пожалуйста исправьте ошибку.
+[18:2:0] - [Инфо] Developer - Mkrtchyan Martun <mart@kassa26.ru>
+[18:2:0] - [Инфо] Начало обмена данными между OkDesk и Спутник.
+[18:2:0] - [Инфо] Начало загрузки локальных данных.
+[18:2:1] - Записи 1036 не существует, пожалуйста исправьте ошибку, пожалуйста исправьте ошибку.
+[18:2:24] - [Инфо] Developer - Mkrtchyan Martun <mart@kassa26.ru>
+[18:2:24] - [Инфо] Начало обмена данными между OkDesk и Спутник.
+[18:2:24] - [Инфо] Начало загрузки локальных данных.
+[18:2:24] - Записи 1036 не существует, пожалуйста исправьте ошибку[18:2:25] - [Инфо] Developer - Mkrtchyan Martun <mart@kassa26.ru>
+[18:2:25] - [Инфо] Начало обмена данными между OkDesk и Спутник.
+[18:2:25] - [Инфо] Начало загрузки локальных данных.
+[18:2:26] - Записи 1036 не существует, пожалуйста исправьте ошибку[18:2:29] - [Инфо] Developer - Mkrtchyan Martun <mart@kassa26.ru>
+[18:2:29] - [Инфо] Начало обмена данными между OkDesk и Спутник.
+[18:2:29] - [Инфо] Начало загрузки локальных данных.
+[18:2:29] - Записи 1036 не существует, пожалуйста исправьте ошибку[18:2:29] - [Инфо] Developer - Mkrtchyan Martun <mart@kassa26.ru>
+[18:2:29] - [Инфо] Начало обмена данными между OkDesk и Спутник.
+[18:2:29] - [Инфо] Начало загрузки локальных данных.
+[18:2:30] - Записи 1036 не существует, пожалуйста исправьте ошибку[18:2:30] - [Инфо] Developer - Mkrtchyan Martun <mart@kassa26.ru>
+[18:2:30] - [Инфо] Начало обмена данными между OkDesk и Спутник.
+[18:2:30] - [Инфо] Начало загрузки локальных данных.
+[18:2:30] - Записи 1036 не существует, пожалуйста исправьте ошибку[18:2:36] - [Инфо] Developer - Mkrtchyan Martun <mart@kassa26.ru>
+[18:2:36] - [Инфо] Начало обмена данными между OkDesk и Спутник.
+[18:2:36] - [Инфо] Начало загрузки локальных данных.
+[18:2:36] - Записи 1036 не существует, пожалуйста исправьте ошибку[18:2:41] - [Инфо] Developer - Mkrtchyan Martun <mart@kassa26.ru>
+[18:2:41] - [Инфо] Начало обмена данными между OkDesk и Спутник.
+[18:2:41] - [Инфо] Начало загрузки локальных данных.
+[18:2:41] - Записи 1036 не существует, пожалуйста исправьте ошибку[18:3:12] - [Инфо] Developer - Mkrtchyan Martun <mart@kassa26.ru>
+[18:3:12] - [Инфо] Начало обмена данными между OkDesk и Спутник.
+[18:3:12] - [Инфо] Начало загрузки локальных данных.
+[18:3:13] - [Инфо] [Ошибка] Заявка уже была ранее выгружена. (OkDesk ID: 1037) Пропуск...
+[18:3:13] - [Инфо] Загрузка локальных данных закончена.
+[18:3:13] - [Инфо] Обмен данными между OkDesk и Спутник завершен.
+[18:4:32] - [Инфо] Developer - Mkrtchyan Martun <mart@kassa26.ru>
+[18:4:32] - [Инфо] Начало обмена данными между OkDesk и Спутник.
+[18:4:32] - [Инфо] Начало загрузки локальных данных.
+[18:4:32] - [Инфо] [OkDesk] Файл: '1037-1037data.json' - уже существует в 'data/okdesk'
+[18:4:33] - [Инфо] [Ошибка] Заявка уже была ранее выгружена. (OkDesk ID: 1037) Пропуск...
+[18:4:33] - [Инфо] Загрузка локальных данных закончена.
+[18:4:33] - [Инфо] Обмен данными между OkDesk и Спутник завершен.
+[18:5:34] - [Инфо] Developer - Mkrtchyan Martun <mart@kassa26.ru>
+[18:5:34] - [Инфо] Начало обмена данными между OkDesk и Спутник.
+[18:5:34] - [Инфо] Начало загрузки локальных данных.
+[18:5:34] - [Инфо] [OkDesk] Файл: '1037-1037data.json' - уже существует в 'data/okdesk'
+[18:5:34] - [Инфо] [Ошибка] Заявка уже была ранее выгружена. (OkDesk ID: 1037) Пропуск...
+[18:5:34] - [Инфо] Загрузка локальных данных закончена.
+[18:5:34] - [Инфо] Обмен данными между OkDesk и Спутник завершен.
+[18:6:17] - [Инфо] Developer - Mkrtchyan Martun <mart@kassa26.ru>
+[18:6:17] - [Инфо] Начало обмена данными между OkDesk и Спутник.
+[18:6:17] - [Инфо] Начало загрузки локальных данных.
+[18:6:17] - [Инфо] [OkDesk] Файл: '1037-1037data.json' - уже существует в 'data/okdesk'
+[18:6:17] - [Ошибка] Заявка уже была ранее выгружена. (OkDesk ID: 1037) Пропуск..., пожалуйста исправьте ошибку[18:6:18] - [Ошибка] Заявка уже была ранее выгружена. (OkDesk ID: 1037) Пропуск..., пожалуйста исправьте ошибку[18:7:8] - [Инфо] Developer - Mkrtchyan Martun <mart@kassa26.ru>
+[18:7:8] - [Инфо] Начало обмена данными между OkDesk и Спутник.
+[18:7:8] - [Инфо] Начало загрузки локальных данных.
+[18:7:8] - [Инфо] [OkDesk] Файл: '1037-1037data.json' - уже существует в 'data/okdesk'
+[18:7:9] - Заявка уже была ранее выгружена. (OkDesk ID: 1037) Пропуск..., пожалуйста исправьте ошибку[18:7:9] - Заявка уже была ранее выгружена. (OkDesk ID: 1037) Пропуск..., пожалуйста исправьте ошибку[18:7:59] - [Инфо] Developer - Mkrtchyan Martun <mart@kassa26.ru>
+[18:7:59] - [Инфо] Начало обмена данными между OkDesk и Спутник.
+[18:7:59] - [Инфо] Начало загрузки локальных данных.
+[18:7:59] - [Инфо] [OkDesk] Файл: '1037-1037data.json' - уже существует в 'data/okdesk'
+[18:8:0] - Заявка уже была ранее выгружена. (OkDesk ID: 1037) Пропуск..., пожалуйста исправьте ошибку[18:8:0] - Заявка уже была ранее выгружена. (OkDesk ID: 1037) Пропуск..., пожалуйста исправьте ошибку[18:8:41] - [Инфо] Developer - Mkrtchyan Martun <mart@kassa26.ru>
+[18:8:41] - [Инфо] Начало обмена данными между OkDesk и Спутник.
+[18:8:41] - [Инфо] Начало загрузки локальных данных.
+[18:8:41] - [Инфо] [OkDesk] Файл: '1037-1037data.json' - уже существует в 'data/okdesk'
+[18:8:41] - Заявка уже была ранее выгружена. (OkDesk ID: 1037) Пропуск..., пожалуйста исправьте ошибку[18:8:42] - Заявка уже была ранее выгружена. (OkDesk ID: 1037) Пропуск..., пожалуйста исправьте ошибку[18:9:5] - [Инфо] Developer - Mkrtchyan Martun <mart@kassa26.ru>
+[18:9:5] - [Инфо] Начало обмена данными между OkDesk и Спутник.
+[18:9:5] - [Инфо] Начало загрузки локальных данных.
+[18:9:5] - [Инфо] [OkDesk] Файл: '1037-1037data.json' - уже существует в 'data/okdesk'
+[18:9:5] - Заявка уже была ранее выгружена. (OkDesk ID: 1037) Пропуск..., пожалуйста исправьте ошибку[18:9:6] - Заявка уже была ранее выгружена. (OkDesk ID: 1037) Пропуск..., пожалуйста исправьте ошибку[18:9:13] - [Инфо] Developer - Mkrtchyan Martun <mart@kassa26.ru>
+[18:9:13] - [Инфо] Начало обмена данными между OkDesk и Спутник.
+[18:9:13] - [Инфо] Начало загрузки локальных данных.
+[18:9:13] - [Инфо] [OkDesk] Файл: '1037-1037data.json' - уже существует в 'data/okdesk'
+[18:9:13] - Заявка уже была ранее выгружена. (OkDesk ID: 1037) Пропуск..., пожалуйста исправьте ошибку[18:9:13] - Заявка уже была ранее выгружена. (OkDesk ID: 1037) Пропуск..., пожалуйста исправьте ошибку
