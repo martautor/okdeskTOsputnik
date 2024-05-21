@@ -101,15 +101,12 @@ async function start(firstID, lastID) {
                     // console.log(data)
                     nextData = data
                     }})
-                .catch(e => {logToFile(e.message, true); throw createError(404, e.message)})
+                .catch(e => {logToFile(e.message); throw createError(404, e.message)})
         }
-        logToFile('Загрузка локальных данных закончена.') 
     }    
     logToFile(process.env.config)
     /////Проверка наличия файла, если файл есть - то ничего не делаем
     let status = ''
-    logToFile('Начало обмена данными между OkDesk и Спутник.')
-    logToFile('Начало загрузки локальных данных.')
     await fs1.access(`data/okdesk/${firstID}-${lastID}data.json`, constants.F_OK).then(async (d) => {
         logToFile(`[OkDesk] Файл: '${firstID}-${lastID}data.json' - уже существует в 'data/okdesk'`)  
         await active(true)
@@ -127,14 +124,17 @@ app.get('/api/nextdata', async (req, res) => {
 
 app.use('/api/successIds', datas_routes)
 
-cron.schedule('* * * * *', function() {
+cron.schedule('* * * * *', async function() {
     let fids = nextData.skipped
     let lids = nextData.successed.at(-1)
     console.log(fids, lids+10)
     for (id in fids) {
-        start(fids[id], fids[id])
+        await start(fids[id], fids[id])
+        .catch(e => {throw createError(400, e.message)})
     }
     for (id in fids) {
-        start(lids+1, lids+6)
+        await start(lids+1, lids+6)
+        .catch(e => {throw createError(400, e.message)})
+
     }
 });

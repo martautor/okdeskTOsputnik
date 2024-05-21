@@ -13,7 +13,7 @@ const date = formatDate(new Date())
 
 let msg = ''
 
-const skippedTasks = []
+const skippedTasks = [1158,1177,1178]
 const successedTasks = [1025,1027,1028,1029,1030,1031,1032,1033,1034,1035,1037,
                         1038,1039,1040,1041,1042,1044,1045,1047,1048,1049,1050,
                         1051,1052,1053,1054,1055,1056,1057,1058,1059,1060,1062,
@@ -32,7 +32,7 @@ module.exports = async function Render(jsonF) {
     const json = await jsonF
     if(json['status'].code === 'opened' || json['status'].code === 'work') {
         logToFile(`[LOG] Заявка не является завершенной (OkDesk ID: ${json['id']}) Пропуск...`, true)
-        console.log(!skippedTasks.includes(json['id']))
+        // console.log(!skippedTasks.includes(json['id']))
         if(!skippedTasks.includes(json['id'])) {
             skippedTasks.push(json['id'])
         }

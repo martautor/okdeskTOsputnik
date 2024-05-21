@@ -3,7 +3,7 @@ import TextField from '@mui/material/TextField';
 import React from 'react'
 import {useState, useEffect} from 'react'
 import Fetching from './fetching';
-import { Box, Button, Grid } from '@mui/material';
+import { Box, Button, Grid, Paper } from '@mui/material';
 // import hslog from './files/history.log.txt'
 
 function App() {
@@ -58,9 +58,7 @@ function App() {
     // const fDate = `${date.getFullYear()}/${date.getMonth()}/${date.getDate()}`
     const text = <> {History} <p style={{textAlign: 'center', marginLeft: 25, color: 'grey'}}>{'['}{date} {time}{']'} {firstValue}-{secondValue} ID's</p></>
     // fs.writeFile('./files/history.log.txt', text)  
-    localStorage.setItem("history", String(text))
-    // saveAs(new File([String(text)], './files/history.log.txt', {type: 'text/plain;charset=utf-8'}))
-    
+    console.log(text)
     newHistory(text)
   }
 
@@ -68,7 +66,7 @@ function App() {
     <Grid container spacing={0}  style={{marginTop: 75}}>
       <Grid item xs style={{textAlign: 'center'}}>
       <h3 >История обмена:</h3>
-      {!History ? 'Нажмите "Загрузить заявки"': History}
+      <Paper sx={{maxHeight: 540, display: "list-item", wordWrap: 'break-word', overflowX:'hidden', color: !History ? 'grey' : 'white'}} elevation={3}>{!History ? 'Нажмите "Загрузить заявки"': History} </Paper>
       </Grid>
       <Grid item xs={4} style={{ height: 600, borderRight: 'solid', borderLeft: 'solid', borderColor: 'black'}}>
       <h2 style={{textAlign: 'center', marginBottom: 0}}>Обмен данными OkDesk to Sputnik</h2>
