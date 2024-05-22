@@ -10,7 +10,7 @@ const logToFile = require('./functions/logToFile')
 const cron = require('node-cron');
 const express = require('express')
 const app = express()
-
+const path = require('path');
 const datas_routes = require('./routes/data')
 const cors = require("cors");
 const { error } = require('console')
@@ -124,9 +124,37 @@ app.get('/api/nextdata', async (req, res) => {
 
 app.use('/api/successIds', datas_routes)
 
+// cron.schedule('* * * * *', async function() {
+//     let fids = nextData.skipped
+//     let lids = nextData.successed.at(-1)
+//     console.log(fids, lids+10)
+//     for (id in fids) {
+//         await start(fids[id], fids[id])
+//         .catch(e => {throw createError(400, e.message)})
+//     }
+//     for (id in fids) {
+//         await start(lids+1, lids+6)
+//         .catch(e => {throw createError(400, e.message)})
+
+//     }
+// });
+
+const jsonFilePath = path.join(__dirname, 'data/sputnik/successed/nextdata.json')
+
+app.get('/api/nextdatas', (req, res) => {
+    res.sendFile(jsonFilePath)
+})
+
 cron.schedule('* * * * *', async function() {
-    let fids = nextData.skipped
-    let lids = nextData.successed.at(-1)
+    let nextDatas = {}
+    await fetch(`${process.env.fullAddress}/api/nextdatas`)
+        .then(res => res.json())
+        .then(data => {
+            console.log(data)
+            nextDatas = {skipped: data.skipped, successed: data.successed}
+        })
+    let fids = nextDatas.skipped
+    let lids = nextDatas.successed.at(-1)
     console.log(fids, lids+10)
     for (id in fids) {
         await start(fids[id], fids[id])

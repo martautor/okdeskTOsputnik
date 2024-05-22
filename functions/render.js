@@ -28,6 +28,9 @@ const successedTasks = [1025,1027,1028,1029,1030,1031,1032,1033,1034,1035,1037,
                         1157,1159,1160,1161,1162,1163,1164,1165,1166,1167,1168,
                         1169,1170,1171,1172,1173,1174,1175,1176,1179,1180,1181,
                         1182,1183,1184,1185,1186,1188,1189,1190,1192,1194,1195]
+function saveInFile(arr) {
+    fs2.writeFileSync(`data/sputnik/successed/nextdata.json`, JSON.stringify(arr))
+    }
 module.exports = async function Render(jsonF) {
     const json = await jsonF
     if(json['status'].code === 'opened' || json['status'].code === 'work' || json['status'].code === 'delayed') {
@@ -85,6 +88,7 @@ module.exports = async function Render(jsonF) {
                     break     
             }
         })
+        saveInFile({skipped: skippedTasks, successed: successedTasks})
         logToFile(`Сущность с ID: ${json['id']} обработана на сервере.`)
         logToFile(json['id'], false, `data/sputnik/successed/${formatDate(new Date())}.txt`)
         successedTasks.push(json['id'])
