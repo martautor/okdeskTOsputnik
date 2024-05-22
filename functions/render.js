@@ -30,7 +30,7 @@ const successedTasks = [1025,1027,1028,1029,1030,1031,1032,1033,1034,1035,1037,
                         1182,1183,1184,1185,1186,1188,1189,1190,1192,1194,1195]
 module.exports = async function Render(jsonF) {
     const json = await jsonF
-    if(json['status'].code === 'opened' || json['status'].code === 'work') {
+    if(json['status'].code === 'opened' || json['status'].code === 'work' || json['status'].code === 'delayed') {
         logToFile(`[LOG] Заявка не является завершенной (OkDesk ID: ${json['id']}) Пропуск...`, true)
         // console.log(!skippedTasks.includes(json['id']))
         if(!skippedTasks.includes(json['id'])) {
