@@ -34,12 +34,13 @@ function saveInFile(arr) {
 module.exports = async function Render(jsonF) {
     const json = await jsonF
     if(json['status'].code === 'opened' || json['status'].code === 'work' || json['status'].code === 'delayed') {
-        logToFile(`[LOG] Заявка не является завершенной (OkDesk ID: ${json['id']}) Пропуск...`, true)
+        
         // console.log(!skippedTasks.includes(json['id']))
         if(!skippedTasks.includes(json['id'])) {
             skippedTasks.push(json['id'])
         }
-        return saveInFile({skipped: skippedTasks, successed: successedTasks})
+        saveInFile({skipped: skippedTasks, successed: successedTasks})
+        return logToFile(`[LOG] Заявка не является завершенной (OkDesk ID: ${json['id']}) Пропуск...`, true)
     } else {
         let index = skippedTasks.indexOf(json['id'])
         delete skippedTasks[index]
