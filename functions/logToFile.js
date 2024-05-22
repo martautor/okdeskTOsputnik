@@ -9,11 +9,11 @@ module.exports = function logToFile(msg, error = false, path = `data/sputnik/log
     if (error === true) {
         const errMsg = msg + ', пожалуйста исправьте ошибку'
         fs2.appendFileSync(path, `${logTime} - ${errMsg}`)
-        console.error(msg)
+        log === false ? '' : console.error(msg)
         createError(400, '[Ошибка] ' + errMsg)
     } else {
         fs2.appendFileSync(path, `${logTime} - [Инфо] ${msg}\n`)
-        console.log(msg)
+        log === false ? '' : console.log(msg)
         return msg
     }
 } 

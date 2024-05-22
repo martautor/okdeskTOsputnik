@@ -40,7 +40,8 @@ module.exports = async function Render(jsonF) {
             skippedTasks.push(json['id'])
         }
         saveInFile({skipped: skippedTasks, successed: successedTasks})
-        return logToFile(`[LOG] Заявка не является завершенной (OkDesk ID: ${json['id']}) Пропуск...`, true)
+        logToFile(`[LOG] Заявка не является завершенной (OkDesk ID: ${json['id']}) Пропуск...`, false, undefined, true)
+        return createError(404, `[LOG] Заявка не является завершенной (OkDesk ID: ${json['id']}) Пропуск...`) 
     } else {
         let index = skippedTasks.indexOf(json['id'])
         delete skippedTasks[index]

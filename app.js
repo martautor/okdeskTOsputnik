@@ -96,7 +96,9 @@ async function start(firstID, lastID) {
             }
             await Render(await getData(i))
                 .then(data => { 
-                if (data === undefined) throw createError(404, 'data is undefined')})
+                if (data === undefined) throw createError(404, 'data is undefined');
+                // return createError(404, data.message)
+                })
                 .catch(e => {logToFile(e.message); throw createError(404, e.message)})
         }
     }    
@@ -151,14 +153,14 @@ cron.schedule('* * * * *', async function() {
         })
     let fids = nextDatas.skipped
     let lids = nextDatas.successed.at(-1)
-    console.log(fids, lids+10)
+    console.log(fids, lids+6)
     for (id in fids) {
         await start(fids[id], fids[id])
-        .catch(e => {throw createError(400, e.message)})
+        // .catch(e => {throw createError(400, e.message)})
     }
     for (id in fids) {
         await start(lids+1, lids+6)
-        .catch(e => {throw createError(400, e.message)})
+        // .catch(e => {throw createError(400, e.message)})
 
     }
 });
