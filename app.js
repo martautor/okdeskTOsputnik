@@ -96,11 +96,7 @@ async function start(firstID, lastID) {
             }
             await Render(await getData(i))
                 .then(data => { 
-                if (data === undefined) throw createError(404, 'data is undefined')
-                    else {
-                    // console.log(data)
-                    nextData = data
-                    }})
+                if (data === undefined) throw createError(404, 'data is undefined')})
                 .catch(e => {logToFile(e.message); throw createError(404, e.message)})
         }
     }    
