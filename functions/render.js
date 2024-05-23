@@ -13,27 +13,23 @@ const date = formatDate(new Date())
 
 let msg = ''
 
-const skippedTasks = [1158,1177,1178]
-const successedTasks = [1025,1027,1028,1029,1030,1031,1032,1033,1034,1035,1037,
-                        1038,1039,1040,1041,1042,1044,1045,1047,1048,1049,1050,
-                        1051,1052,1053,1054,1055,1056,1057,1058,1059,1060,1062,
-                        1063,1064,1065,1066,1067,1068,1069,1070,1071,1072,1073,
-                        1074,1075,1076,1077,1078,1079,1080,1081,1082,1083,1084,
-                        1085,1087,1088,1089,1090,1091,1092,1093,1094,1095,1096,
-                        1097,1098,1099,1100,1101,1102,1103,1104,1105,1106,1107,
-                        1108,1109,1110,1111,1112,1113,1114,1115,1116,1117,1118,
-                        1119,1120,1121,1122,1123,1124,1125,1126,1127,1128,1129,
-                        1130,1132,1133,1134,1135,1137,1138,1139,1140,1141,1142,
-                        1143,1144,1145,1146,1147,1148,1149,1151,1153,1155,1156,
-                        1157,1159,1160,1161,1162,1163,1164,1165,1166,1167,1168,
-                        1169,1170,1171,1172,1173,1174,1175,1176,1179,1180,1181,
-                        1182,1183,1184,1185,1186,1188,1189,1190,1192,1194,1195]
+let skippedTasks = []
+let successedTasks = []
+
 function saveInFile(arr) {
     fs2.writeFileSync(`data/sputnik/successed/nextdata.json`, JSON.stringify(arr))
     }
 module.exports = async function Render(jsonF) {
+    await fetch(`${process.env.fullAddress}/api/nextdatas`)
+        .then(res => res.json())
+        .then(data => {
+    
+            skippedTasks = [...data.skipped]
+            successedTasks = [...data.successed]
+        })
+        .catch(e => error(e.message))
     const json = await jsonF
-    if(json['status'].code === 'opened' || json['status'].code === 'work' || json['status'].code === 'delayed') {
+    if(json['status'].code === 'opened' || json['status'].code === 'work' || json['status'].code === 'delayed' || json['status'].code === 'reaction') {
         
         // console.log(!skippedTasks.includes(json['id']))
         if(!skippedTasks.includes(json['id'])) {
@@ -41,18 +37,26 @@ module.exports = async function Render(jsonF) {
         }
         saveInFile({skipped: skippedTasks, successed: successedTasks})
         logToFile(`[LOG] Заявка не является завершенной (OkDesk ID: ${json['id']}) Пропуск...`, false, undefined, true)
-        return createError(404, `[LOG] Заявка не является завершенной (OkDesk ID: ${json['id']}) Пропуск...`) 
+        createError(404, `[LOG] Заявка не является завершенной (OkDesk ID: ${json['id']}) Пропуск...`) 
+        return {skipped: skippedTasks, successed: successedTasks}
     } else {
         let index = skippedTasks.indexOf(json['id'])
         delete skippedTasks[index]
     } if (json['id'] <= 1024 || successedTasks.find((e) => e === json['id'])) {
          logToFile(`Заявка уже была ранее выгружена. (OkDesk ID: ${json['id']})`, true)
-         return saveInFile({skipped: skippedTasks, successed: successedTasks})
+        //  delete skippedTasks[json['id']]
+         saveInFile({skipped: skippedTasks, successed: successedTasks})
+        return {skipped: skippedTasks, successed: successedTasks}
     } if (typeof json.errors === 'object') {
         logToFile(`${json.errors}`, true, `data/sputnik/logs/${formatDate(new Date())}.log`, true)
-        return saveInFile({skipped: skippedTasks, successed: successedTasks})
+        saveInFile({skipped: skippedTasks, successed: successedTasks})
+        return {skipped: skippedTasks, successed: successedTasks}
     } 
-    
+    if(skippedTasks.includes(null)) {
+        let index = skippedTasks.indexOf(null)
+        delete skippedTasks[index]
+        return {skipped: skippedTasks, successed: successedTasks}
+    }
     const params = {"key": process.env.SPUTNIK_API,"username": process.env.SPUTNIK_username,"password": process.env.SPUTNIK_password,"action": "insert",
         "entity_id": process.env.taskentityID, /// ID Сущности "Заявки"
         "items": {}}
@@ -94,10 +98,12 @@ module.exports = async function Render(jsonF) {
         logToFile(json['id'], false, `data/sputnik/successed/${formatDate(new Date())}.txt`)
         successedTasks.push(json['id'])
         startRender(params, timeParams)
-        return saveInFile({skipped: skippedTasks, successed: successedTasks})
+        saveInFile({skipped: skippedTasks, successed: successedTasks})
+        return {skipped: skippedTasks, successed: successedTasks}
     } else {
         logToFile(`Не найдено ID клиента (OkDesk ID: ${json['id']}) Пропуск...`, true)
-        return saveInFile({skipped: skippedTasks, successed: successedTasks})
+        saveInFile({skipped: skippedTasks, successed: successedTasks})
+        return {skipped: skippedTasks, successed: successedTasks}
         // new Error(`[Ошибка] Не найдено ID клиента (OkDesk ID: ${json['id']}) Пропуск...`)
     }
     async function startRender(p, tp) {
@@ -144,7 +150,8 @@ module.exports = async function Render(jsonF) {
             .then(response => logToFile(`comment id: ${response.data.id}, task comment status: ${response.status}`))
             await comFetch
         }
-        return saveInFile({skipped: skippedTasks, successed: successedTasks})
+        saveInFile({skipped: skippedTasks, successed: successedTasks})
+        return {skipped: skippedTasks, successed: successedTasks}
     } 
 }
 

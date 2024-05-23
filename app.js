@@ -97,7 +97,7 @@ async function start(firstID, lastID) {
             await Render(await getData(i))
                 .then(data => { 
                 if (data === undefined) throw createError(404, 'data is undefined');
-                // return createError(404, data.message)
+                nextData = data
                 })
                 .catch(e => {logToFile(e.message); throw createError(404, e.message)})
         }
@@ -112,7 +112,7 @@ async function start(firstID, lastID) {
     }).catch(async (e) => {
         await active(false) 
     })
-    logToFile('Обмен данными между OkDesk и Спутник завершен.')
+    
     return status
 }
 
@@ -144,23 +144,23 @@ app.get('/api/nextdatas', (req, res) => {
 })
 
 cron.schedule('* * * * *', async function() {
-    let nextDatas = {}
-    await fetch(`${process.env.fullAddress}/api/nextdatas`)
+    let fids = nextData.skipped
+    let lids = nextData.successed.at(-1)
+    if(lids === undefined || fids === undefined)
+    {
+        await fetch(`${process.env.fullAddress}/api/nextdatas`)
         .then(res => res.json())
         .then(data => {
-            console.log(data)
-            nextDatas = {skipped: data.skipped, successed: data.successed}
+            lids = [...data.skipped]
+            lids = data.successed.at(-1)
         })
-    let fids = nextDatas.skipped
-    let lids = nextDatas.successed.at(-1)
-    console.log(fids, lids+6)
+        .catch(e => error(e.message))
+    } 
+    logToFile('Начало автоматической выгрузки данных')
+
+    await start(lids+1, lids+6)
     for (id in fids) {
         await start(fids[id], fids[id])
         // .catch(e => {throw createError(400, e.message)})
-    }
-    for (id in fids) {
-        await start(lids+1, lids+6)
-        // .catch(e => {throw createError(400, e.message)})
-
     }
 });

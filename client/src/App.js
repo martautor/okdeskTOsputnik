@@ -70,7 +70,7 @@ function App() {
       </Grid>
       <Grid item xs={4} style={{ height: 600, borderRight: 'solid', borderLeft: 'solid', borderColor: 'black'}}>
       <h2 style={{textAlign: 'center', marginBottom: 0}}>Обмен данными OkDesk to Sputnik</h2>
-      <h5 style={{textAlign: 'center', margin: 0, opacity: 0.4}}> v 4.1.0 (stable)</h5>
+      <h5 style={{textAlign: 'center', margin: 0, opacity: 0.4}}> v 5.0.0 (stable)</h5>
       <h4 style={{textAlign: 'center', marginTop: 10, opacity: 0.9}}>by Martun Mkrtchyan {'<mart@kassa26.ru>'}</h4>
       <div style={{marginRight: '15px', display: 'flex', flexFlow: 'column', flexWrap: 'wrap', alignContent: 'center', justifyContent: 'center', alignItems: 'center', textAlign: 'center'}} className="App">
         от <TextField
