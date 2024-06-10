@@ -1,0 +1,135 @@
+[13:32:51] - [Инфо] Developer - Mkrtchyan Martun <mart@kassa26.ru>
+[13:32:52] - [Инфо] Сущность с ID: 1321 обработана на сервере.
+[13:32:52] - [Инфо] Отправка данных в Спутник...
+[13:32:52] - [Инфо] task status: success, task time status: success
+[13:32:52] - [Инфо] SputnikTaskID: 30822
+[13:32:53] - [Инфо] comment id: 155586, task comment status: success
+[13:32:53] - Не найдено ID клиента (OkDesk ID: 1322) Пропуск..., пожалуйста исправьте ошибку[13:32:54] - [Инфо] Сущность с ID: 1323 обработана на сервере.
+[13:32:54] - [Инфо] Отправка данных в Спутник...
+[13:32:54] - [Инфо] task status: success, task time status: success
+[13:32:54] - [Инфо] SputnikTaskID: 30823
+[13:32:54] - [Инфо] comment id: 155587, task comment status: success
+[13:32:58] - Не найдено ID клиента (OkDesk ID: 1324) Пропуск..., пожалуйста исправьте ошибку[13:32:58] - [Инфо] Сущность с ID: 1325 обработана на сервере.
+[13:32:59] - [Инфо] Отправка данных в Спутник...
+[13:32:59] - [Инфо] task status: success, task time status: success
+[13:32:59] - [Инфо] SputnikTaskID: 30824
+[13:33:0] - [Инфо] Developer - Mkrtchyan Martun <mart@kassa26.ru>
+[13:33:0] - [Инфо] [OkDesk] Файл: '1158-1158data.json' - уже существует в 'data/okdesk'
+[13:33:0] - [Инфо] comment id: 155588, task comment status: success
+[13:33:0] - [Инфо] Сущность с ID: 1158 обработана на сервере.
+[13:33:0] - [Инфо] Обмен данными между OkDesk и Спутник завершен.
+[13:33:0] - [Инфо] Developer - Mkrtchyan Martun <mart@kassa26.ru>
+[13:33:0] - [Инфо] [OkDesk] Файл: '1177-1177data.json' - уже существует в 'data/okdesk'
+[13:33:1] - [Инфо] Отправка данных в Спутник...
+[13:33:1] - [Инфо] task status: success, task time status: success
+[13:33:1] - [Инфо] SputnikTaskID: 30825
+[13:33:1] - [Инфо] Сущность с ID: 1326 обработана на сервере.
+[13:33:1] - [Инфо] Отправка данных в Спутник...
+[13:33:1] - [Инфо] task status: success, task time status: success
+[13:33:1] - [Инфо] SputnikTaskID: 30826
+[13:33:1] - [Инфо] comment id: 155589, task comment status: success
+[13:33:1] - [Инфо] Сущность с ID: 1177 обработана на сервере.
+[13:33:1] - [Инфо] Обмен данными между OkDesk и Спутник завершен.
+[13:33:1] - [Инфо] Developer - Mkrtchyan Martun <mart@kassa26.ru>
+[13:33:1] - [Инфо] [OkDesk] Файл: '1178-1178data.json' - уже существует в 'data/okdesk'
+[13:33:1] - [Инфо] Отправка данных в Спутник...
+[13:33:1] - [Инфо] task status: success, task time status: success
+[13:33:1] - [Инфо] SputnikTaskID: 30827
+[13:33:2] - [Инфо] comment id: 155590, task comment status: success
+[13:33:2] - [LOG] Заявка не является завершенной (OkDesk ID: 1178) Пропуск..., пожалуйста исправьте ошибку[13:33:2] - [Инфо] Обмен данными между OkDesk и Спутник завершен.
+[13:33:2] - [Инфо] Developer - Mkrtchyan Martun <mart@kassa26.ru>
+[13:33:2] - [Инфо] [OkDesk] Файл: '1326-1331data.json' - уже существует в 'data/okdesk'
+[13:33:2] - [Инфо] comment id: 155591, task comment status: success
+[13:33:2] - [Инфо] comment id: 155592, task comment status: success
+[13:33:2] - [Инфо] comment id: 155593, task comment status: success
+[13:33:2] - Заявка уже была ранее выгружена. (OkDesk ID: 1326), пожалуйста исправьте ошибку[13:33:3] - [Инфо] Сущность с ID: 1327 обработана на сервере.
+[13:33:3] - [Инфо] Отправка данных в Спутник...
+[13:33:3] - [Инфо] task status: success, task time status: success
+[13:33:3] - [Инфо] SputnikTaskID: 30828
+[13:33:3] - [Инфо] Сущность с ID: 1328 обработана на сервере.
+[13:33:3] - [Инфо] comment id: 155594, task comment status: success
+[13:33:3] - [Инфо] Отправка данных в Спутник...
+[13:33:3] - [Инфо] task status: success, task time status: success
+[13:33:3] - [Инфо] SputnikTaskID: 30829
+[13:33:3] - Заявка уже была ранее выгружена. (OkDesk ID: 1327), пожалуйста исправьте ошибку[13:33:3] - [Инфо] comment id: 155595, task comment status: success
+[13:33:4] - [Инфо] Сущность с ID: 1329 обработана на сервере.
+[13:33:4] - [Инфо] Отправка данных в Спутник...
+[13:33:4] - [Инфо] task status: success, task time status: success
+[13:33:4] - [Инфо] SputnikTaskID: 30830
+[13:33:4] - [Инфо] Сущность с ID: 1330 обработана на сервере.
+[13:33:4] - [Инфо] comment id: 155596, task comment status: success
+[13:33:4] - Заявка уже была ранее выгружена. (OkDesk ID: 1328), пожалуйста исправьте ошибку[13:33:4] - [Инфо] Отправка данных в Спутник...
+[13:33:4] - [Инфо] task status: success, task time status: success
+[13:33:4] - [Инфо] SputnikTaskID: 30831
+[13:33:4] - [Инфо] comment id: 155597, task comment status: success
+[13:33:4] - [Инфо] comment id: 155598, task comment status: success
+[13:33:5] - [Инфо] Сущность с ID: 1331 обработана на сервере.
+[13:33:5] - [Инфо] Обмен данными между OkDesk и Спутник завершен.
+[13:33:5] - Заявка уже была ранее выгружена. (OkDesk ID: 1329), пожалуйста исправьте ошибку[13:33:5] - [Инфо] Отправка данных в Спутник...
+[13:33:5] - [Инфо] task status: success, task time status: success
+[13:33:5] - [Инфо] SputnikTaskID: 30832
+[13:33:5] - [Инфо] comment id: 155599, task comment status: success
+[13:33:5] - Заявка уже была ранее выгружена. (OkDesk ID: 1330), пожалуйста исправьте ошибку[13:33:6] - Заявка уже была ранее выгружена. (OkDesk ID: 1331), пожалуйста исправьте ошибку[13:33:7] - [Инфо] Сущность с ID: 1332 обработана на сервере.
+[13:33:7] - [Инфо] Отправка данных в Спутник...
+[13:33:7] - [Инфо] task status: success, task time status: success
+[13:33:7] - [Инфо] SputnikTaskID: 30833
+[13:33:7] - [Инфо] comment id: 155600, task comment status: success
+[13:33:7] - [Инфо] Сущность с ID: 1333 обработана на сервере.
+[13:33:7] - [Инфо] comment id: 155601, task comment status: success
+[13:33:7] - [Инфо] Отправка данных в Спутник...
+[13:33:7] - [Инфо] task status: success, task time status: success
+[13:33:7] - [Инфо] SputnikTaskID: 30834
+[13:33:8] - [Инфо] comment id: 155602, task comment status: success
+[13:33:8] - [Инфо] Сущность с ID: 1334 обработана на сервере.
+[13:33:8] - [Инфо] Отправка данных в Спутник...
+[13:33:8] - [Инфо] task status: success, task time status: success
+[13:33:8] - [Инфо] SputnikTaskID: 30835
+[13:33:8] - [Инфо] comment id: 155603, task comment status: success
+[13:33:8] - [Инфо] comment id: 155604, task comment status: success
+[13:33:8] - [Инфо] Сущность с ID: 1335 обработана на сервере.
+[13:33:8] - [Инфо] Обмен данными между OkDesk и Спутник завершен.
+[13:33:8] - [Инфо] comment id: 155605, task comment status: success
+[13:33:9] - [Инфо] Отправка данных в Спутник...
+[13:33:9] - [Инфо] task status: success, task time status: success
+[13:33:9] - [Инфо] SputnikTaskID: 30836
+[13:33:9] - [Инфо] comment id: 155606, task comment status: success
+[13:33:9] - [Инфо] comment id: 155607, task comment status: success
+[13:33:9] - [Инфо] comment id: 155608, task comment status: success
+[13:33:9] - [Инфо] comment id: 155609, task comment status: success
+[13:33:9] - [Инфо] comment id: 155610, task comment status: success
+[13:33:10] - [Инфо] comment id: 155611, task comment status: success
+[13:34:0] - [Инфо] Developer - Mkrtchyan Martun <mart@kassa26.ru>
+[13:34:0] - [Инфо] [OkDesk] Файл: '1178-1178data.json' - уже существует в 'data/okdesk'
+[13:34:1] - [LOG] Заявка не является завершенной (OkDesk ID: 1178) Пропуск..., пожалуйста исправьте ошибку[13:34:1] - [Инфо] Обмен данными между OkDesk и Спутник завершен.
+[13:34:1] - [Инфо] Developer - Mkrtchyan Martun <mart@kassa26.ru>
+[13:34:1] - [Инфо] [OkDesk] Файл: '1336-1341data.json' - уже существует в 'data/okdesk'
+[13:34:1] - [Инфо] Сущность с ID: 1336 обработана на сервере.
+[13:34:1] - [Инфо] Отправка данных в Спутник...
+[13:34:1] - [Инфо] task status: success, task time status: success
+[13:34:1] - [Инфо] SputnikTaskID: 30837
+[13:34:1] - [Инфо] Сущность с ID: 1337 обработана на сервере.
+[13:34:2] - [Инфо] Отправка данных в Спутник...
+[13:34:2] - [Инфо] task status: success, task time status: success
+[13:34:2] - [Инфо] SputnikTaskID: 30838
+[13:34:2] - [Инфо] comment id: 155612, task comment status: success
+[13:34:2] - [Инфо] comment id: 155613, task comment status: success
+[13:34:2] - [Инфо] comment id: 155614, task comment status: success
+[13:34:2] - [Инфо] comment id: 155615, task comment status: success
+[13:34:2] - [Инфо] Сущность с ID: 1338 обработана на сервере.
+[13:34:2] - [Инфо] Отправка данных в Спутник...
+[13:34:2] - [Инфо] task status: success, task time status: success
+[13:34:2] - [Инфо] SputnikTaskID: 30839
+[13:34:3] - Не найдено ID клиента (OkDesk ID: 1339) Пропуск..., пожалуйста исправьте ошибку[13:34:3] - [Инфо] comment id: 155616, task comment status: success
+[13:34:4] - [Инфо] Сущность с ID: 1340 обработана на сервере.
+[13:34:4] - [Инфо] Отправка данных в Спутник...
+[13:34:4] - [Инфо] task status: success, task time status: success
+[13:34:4] - [Инфо] SputnikTaskID: 30840
+[13:34:4] - Не найдено ID клиента (OkDesk ID: 1341) Пропуск..., пожалуйста исправьте ошибку[13:34:4] - [Инфо] Обмен данными между OkDesk и Спутник завершен.
+[13:34:4] - [Инфо] comment id: 155617, task comment status: success
+[13:34:4] - [Инфо] comment id: 155618, task comment status: success
+[13:35:0] - [Инфо] Developer - Mkrtchyan Martun <mart@kassa26.ru>
+[13:35:0] - [Инфо] [OkDesk] Файл: '1178-1178data.json' - уже существует в 'data/okdesk'
+[13:35:1] - [LOG] Заявка не является завершенной (OkDesk ID: 1178) Пропуск..., пожалуйста исправьте ошибку[13:35:1] - [Инфо] Обмен данными между OkDesk и Спутник завершен.
+[13:35:1] - [Инфо] Developer - Mkrtchyan Martun <mart@kassa26.ru>
+[13:35:1] - [Инфо] [OkDesk] Файл: '1341-1346data.json' - уже существует в 'data/okdesk'
+[13:35:2] - Не найдено ID клиента (OkDesk ID: 1341) Пропуск..., пожалуйста исправьте ошибку
