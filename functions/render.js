@@ -33,6 +33,7 @@ module.exports = async function Render(jsonF) {
         
         // console.log(!skippedTasks.includes(json['id']))
         if(!skippedTasks.includes(json['id'])) {
+            console.log('DEBUG pushed: ', json['id'])
             skippedTasks.push(json['id'])
         }
         saveInFile({skipped: skippedTasks, successed: successedTasks})
@@ -102,7 +103,7 @@ module.exports = async function Render(jsonF) {
         return {skipped: skippedTasks, successed: successedTasks}
     } else {
         logToFile(`Не найдено ID клиента (OkDesk ID: ${json['id']}) Пропуск...`, true)
-        saveInFile({skipped: skippedTasks, successed: successedTasks})
+        // saveInFile({skipped: skippedTasks, successed: successedTasks})
         return {skipped: skippedTasks, successed: successedTasks}
         // new Error(`[Ошибка] Не найдено ID клиента (OkDesk ID: ${json['id']}) Пропуск...`)
     }

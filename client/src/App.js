@@ -15,7 +15,7 @@ function App() {
 
   useEffect(() => {
     async function getStatus() {
-      return await fetch(`http://192.168.0.9:5000/api/test/`)
+      return await fetch(`http://192.168.0.30:5000/api/test/`)
       .then(data => data.json())
       .then(data => newLog({msg: data.message, clr: data.color}))
       .catch(e => {
