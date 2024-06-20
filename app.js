@@ -87,7 +87,7 @@ async function start(firstID, lastID) {
             errorHandler = await getData(i)
             if(errorHandler.errors !== undefined) {
                 logToFile(errorHandler.errors, true)
-                throw createError(400, '[Ошибка] ' + errorHandler.errors)
+                throw createError(400, '[Ошибка1] ' + errorHandler.errors)
             }
             if(bool === false) {
                 data.push(await getData(i))
@@ -99,7 +99,7 @@ async function start(firstID, lastID) {
                 if (data === undefined) throw createError(404, 'data is undefined');
                 nextData = data
                 })
-                .catch(e => {logToFile(e.message); throw createError(404, e.message)})
+                .catch(e => {logToFile('ERROR', e.message); throw createError(404, e.message)})
         }
     }    
     logToFile(process.env.config)
@@ -143,24 +143,28 @@ app.get('/api/nextdatas', (req, res) => {
     res.sendFile(jsonFilePath)
 })
 
-cron.schedule('* * * * *', async function() {
-    let fids = nextData.skipped
-    let lids = nextData.successed.at(-1)
-    if(lids === undefined || fids === undefined)
-    {
-        await fetch(`${process.env.fullAddress}/api/nextdatas`)
+cron.schedule('59 23 * * *', async function() {
+    let fids = ''
+    let lids = ''
+    await fetch(`${process.env.fullAddress}/api/nextdatas`)
         .then(res => res.json())
         .then(data => {
-            lids = [...data.skipped]
+            fids = data.skipped
             lids = data.successed.at(-1)
         })
         .catch(e => error(e.message))
-    } 
-    logToFile('Начало автоматической выгрузки данных')
-
-    await start(lids+1, lids+6)
-    for (id in fids) {
+    console.log('skipped:' + fids + ', successed: ' + lids)
+    
+	logToFile('Начало цикла след. последовательности')
+	await start(lids, lids+25)
+	.catch(e => console.log(e.message))
+	logToFile('Начало автоматической выгрузки данных')
+	for (id in fids) {
         await start(fids[id], fids[id])
         // .catch(e => {throw createError(400, e.message)})
     }
+	
+    
+	
+    
 });
