@@ -27,32 +27,34 @@ module.exports = async function Render(jsonF) {
             skippedTasks = [...data.skipped]
             successedTasks = [...data.successed]
         })
-        .catch(e => error(e.message))
+        .catch(e => error('ERROR: ', e.message))
     const json = await jsonF
+	if (json.errors !== undefined) {
+		return logToFile('DEBUG: ' + json.errors, true)
+    } 
     if(json['status'].code === 'opened' || json['status'].code === 'work' || json['status'].code === 'delayed' || json['status'].code === 'reaction') {
         
         // console.log(!skippedTasks.includes(json['id']))
         if(!skippedTasks.includes(json['id'])) {
             skippedTasks.push(json['id'])
+			logToFile(json['id'],false, undefined, true)
         }
         saveInFile({skipped: skippedTasks, successed: successedTasks})
         logToFile(`[LOG] Заявка не является завершенной (OkDesk ID: ${json['id']}) Пропуск...`, false, undefined, true)
         createError(404, `[LOG] Заявка не является завершенной (OkDesk ID: ${json['id']}) Пропуск...`) 
         return {skipped: skippedTasks, successed: successedTasks}
     } else {
-        let index = skippedTasks.indexOf(json['id'])
-        delete skippedTasks[index]
+        //let index = skippedTasks.indexOf(json['id'])
+		let newSkipped = skippedTasks.filter((num) => num !== json['id'])
+		console.log(newSkipped)
+		skippedTasks = newSkipped
+        //delete skippedTasks[index]
     } if (json['id'] <= 1024 || successedTasks.find((e) => e === json['id'])) {
          logToFile(`Заявка уже была ранее выгружена. (OkDesk ID: ${json['id']})`, true)
-        //  delete skippedTasks[json['id']]
+        //delete skippedTasks[json['id']]
          saveInFile({skipped: skippedTasks, successed: successedTasks})
         return {skipped: skippedTasks, successed: successedTasks}
-    } if (typeof json.errors === 'object') {
-        logToFile(`${json.errors}`, true, `data/sputnik/logs/${formatDate(new Date())}.log`, true)
-        saveInFile({skipped: skippedTasks, successed: successedTasks})
-        return {skipped: skippedTasks, successed: successedTasks}
-    } 
-    if(skippedTasks.includes(null)) {
+    } if(skippedTasks.includes(null)) {
         let index = skippedTasks.indexOf(null)
         delete skippedTasks[index]
         return {skipped: skippedTasks, successed: successedTasks}
