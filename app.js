@@ -13,6 +13,7 @@ const app = express()
 const path = require('path');
 const datas_routes = require('./routes/data')
 const cors = require("cors");
+const findMax = require('./functions/findMax');
 const { error } = require('console')
 
 let nextData = undefined
@@ -150,7 +151,7 @@ cron.schedule('59 23 * * *', async function() {
         .then(res => res.json())
         .then(data => {
             fids = data.skipped
-            lids = data.successed.at(-1)
+            lids = findMax(data.successed)
         })
         .catch(e => error(e.message))
     console.log('skipped:' + fids + ', successed: ' + lids)
