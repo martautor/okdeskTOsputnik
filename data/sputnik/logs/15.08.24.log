@@ -1,0 +1,63 @@
+[23:59:1] - [Инфо] Начало цикла след. последовательности
+[23:59:1] - [Инфо] Developer - Mkrtchyan Martun <mart@kassa26.ru>
+[23:59:1] - Заявка уже была ранее выгружена. (OkDesk ID: 2191), пожалуйста исправьте ошибку[23:59:2] - [Инфо] Сущность с ID: 2192 обработана на сервере.
+[23:59:2] - [Инфо] Отправка данных в Спутник...
+[23:59:2] - [Инфо] task status: success, task time status: success
+[23:59:2] - [Инфо] SputnikTaskID: 32304
+[23:59:2] - [Инфо] 2193
+[23:59:2] - [Инфо] [LOG] Заявка не является завершенной (OkDesk ID: 2193) Пропуск...
+[23:59:2] - [Инфо] comment id: 162671, task comment status: success
+[23:59:3] - [Инфо] Сущность с ID: 2194 обработана на сервере.
+[23:59:3] - [Инфо] Отправка данных в Спутник...
+[23:59:3] - [Инфо] task status: success, task time status: success
+[23:59:3] - [Инфо] SputnikTaskID: 32305
+[23:59:3] - [Инфо] comment id: 162672, task comment status: success
+[23:59:3] - [Инфо] Сущность с ID: 2195 обработана на сервере.
+[23:59:4] - [Инфо] Отправка данных в Спутник...
+[23:59:4] - [Инфо] task status: success, task time status: success
+[23:59:4] - [Инфо] SputnikTaskID: 32306
+[23:59:4] - [Инфо] comment id: 162673, task comment status: success
+[23:59:4] - [Инфо] Сущность с ID: 2196 обработана на сервере.
+[23:59:4] - [Инфо] Отправка данных в Спутник...
+[23:59:4] - [Инфо] task status: success, task time status: success
+[23:59:4] - [Инфо] SputnikTaskID: 32307
+[23:59:5] - [Инфо] Сущность с ID: 2197 обработана на сервере.
+[23:59:5] - [Инфо] comment id: 162674, task comment status: success
+[23:59:5] - [Инфо] comment id: 162675, task comment status: success
+[23:59:5] - [Инфо] Отправка данных в Спутник...
+[23:59:5] - [Инфо] task status: success, task time status: success
+[23:59:5] - [Инфо] SputnikTaskID: 32308
+[23:59:5] - [Инфо] Сущность с ID: 2198 обработана на сервере.
+[23:59:5] - [Инфо] comment id: 162676, task comment status: success
+[23:59:5] - [Инфо] Отправка данных в Спутник...
+[23:59:5] - [Инфо] task status: success, task time status: success
+[23:59:5] - [Инфо] SputnikTaskID: 32309
+[23:59:5] - [Инфо] comment id: 162677, task comment status: success
+[23:59:6] - [Инфо] Сущность с ID: 2199 обработана на сервере.
+[23:59:6] - [Инфо] comment id: 162678, task comment status: success
+[23:59:6] - [Инфо] Отправка данных в Спутник...
+[23:59:6] - [Инфо] task status: success, task time status: success
+[23:59:6] - [Инфо] SputnikTaskID: 32310
+[23:59:6] - [Инфо] comment id: 162679, task comment status: success
+[23:59:6] - [Инфо] Сущность с ID: 2200 обработана на сервере.
+[23:59:6] - [Инфо] comment id: 162680, task comment status: success
+[23:59:6] - [Инфо] Отправка данных в Спутник...
+[23:59:6] - [Инфо] task status: success, task time status: success
+[23:59:6] - [Инфо] SputnikTaskID: 32311
+[23:59:7] - [Инфо] comment id: 162681, task comment status: success
+[23:59:7] - [Инфо] Сущность с ID: 2201 обработана на сервере.
+[23:59:7] - [Инфо] Отправка данных в Спутник...
+[23:59:7] - [Инфо] task status: success, task time status: success
+[23:59:7] - [Инфо] SputnikTaskID: 32312
+[23:59:7] - [Инфо] comment id: 162682, task comment status: success
+[23:59:7] - [Инфо] Сущность с ID: 2202 обработана на сервере.
+[23:59:7] - [Инфо] Отправка данных в Спутник...
+[23:59:7] - [Инфо] task status: success, task time status: success
+[23:59:7] - [Инфо] SputnikTaskID: 32313
+[23:59:8] - [Инфо] 2203
+[23:59:8] - [Инфо] [LOG] Заявка не является завершенной (OkDesk ID: 2203) Пропуск...
+[23:59:8] - [Инфо] comment id: 162683, task comment status: success
+[23:59:8] - Записи 2204 не существует, пожалуйста исправьте ошибку[23:59:8] - [Инфо] Начало автоматической выгрузки данных
+[23:59:8] - [Инфо] Developer - Mkrtchyan Martun <mart@kassa26.ru>
+[23:59:8] - [Инфо] [OkDesk] Файл: '2097-2097data.json' - уже существует в 'data/okdesk'
+[23:59:8] - Записи 2097 не существует, пожалуйста исправьте ошибку[23:59:8] - Записи 2097 не существует, пожалуйста исправьте ошибку

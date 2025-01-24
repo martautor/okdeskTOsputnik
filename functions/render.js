@@ -30,7 +30,7 @@ module.exports = async function Render(jsonF) {
         .catch(e => error('ERROR: ', e.message))
     const json = await jsonF
 	if (json.errors !== undefined) {
-		return logToFile('DEBUG: ' + json.errors, true)
+		return logToFile('DEBUG: ' + json.errors)
     } 
     if(json['status'].code === 'opened' || json['status'].code === 'work' || json['status'].code === 'delayed' || json['status'].code === 'reaction') {
         
@@ -66,12 +66,13 @@ module.exports = async function Render(jsonF) {
     const timeParams = {"key": process.env.SPUTNIK_API,"username": process.env.SPUTNIK_username,"password": process.env.SPUTNIK_password,"action": "insert",
         "entity_id": process.env.timeentityID, /// ID Сущности "Время"
         "items": {"field_939": 15}}
-    const getIt = await getCompanyId()
-
+	//await getCompanyId()
+	const getIt = await getCompanyId()
     if (json['company_id'] !== null && json['company_id'] !== undefined) {
-        Object.keys(json).map((key) => {
+		
+         Object.keys(json).map(async (key) => {
             switch (key) {
-                case 'company_id':  params.items.parent_item_id = getIt[`${json[key]}`]
+                case 'company_id': params.items.parent_item_id = getIt[`${json[key]}`] ?? 1922
                     break
                 case 'title': params.items.field_751 = `OKID: ${json['id']}, ` +  json[key] 
                     break
@@ -96,6 +97,7 @@ module.exports = async function Render(jsonF) {
                 default: 
                     break     
             }
+		
         })
         logToFile(`Сущность с ID: ${json['id']} обработана на сервере.`)
         logToFile(json['id'], false, `data/sputnik/successed/${formatDate(new Date())}.txt`)
@@ -104,7 +106,8 @@ module.exports = async function Render(jsonF) {
         saveInFile({skipped: skippedTasks, successed: successedTasks})
         return {skipped: skippedTasks, successed: successedTasks}
     } else {
-        logToFile(`Не найдено ID клиента (OkDesk ID: ${json['id']}) Пропуск...`, true)
+        logToFile(`Заявка уже была ранее выгружена. (OkDesk ID: ${json['id']})`, true)
+		console.log("DA")
         // saveInFile({skipped: skippedTasks, successed: successedTasks})
         return {skipped: skippedTasks, successed: successedTasks}
         // new Error(`[Ошибка] Не найдено ID клиента (OkDesk ID: ${json['id']}) Пропуск...`)
@@ -112,7 +115,7 @@ module.exports = async function Render(jsonF) {
     async function startRender(p, tp) {
     
     fs2.writeFileSync(`data/sputnik/rendered/${date}_params.json`, JSON.stringify(p))
-    fs2.writeFileSync(`data/sputnik/rendered/${date}_timeParams.json`, JSON.stringify(tp))
+    
     // fs2.writeFileSync(`data/sputnik/rendered/${date}_timeParams.json`, JSON.stringify(cp))
     /////////////////////////////////////////////////////////////////
     //////////////////////  Создание заявки  ////////////////////////
@@ -120,8 +123,21 @@ module.exports = async function Render(jsonF) {
         method: 'POST',
     })
         .then(response => response.json())
-    // /////////////////////////////////////////////////////////////////
-    tp.items.parent_item_id = await taskID.data.id
+		//.then(response => console.log(response))
+    // ////////////////////////////////////////////////////////////////
+    /*tp.items.parent_item_id
+	= await taskID.data.id
+	console.log("DEBUG: " + tp.items.parent_item_id)
+*/ 
+	try {
+		tp.items.parent_item_id = await taskID.data.id
+	} catch (e) {
+		console.log(e);
+		console.log(e.message);
+	}
+	
+
+	fs2.writeFileSync(`data/sputnik/rendered/${date}_timeParams.json`, JSON.stringify(tp))
     ///////////////////////  Вставка времени  /////////////////////// 
     await fetch(`https://${process.env.SPUTNIK_address}/api/rest.php?${httpBuildQuery(tp)}`, {
         method: 'POST',
@@ -175,17 +191,19 @@ function getObjValues(obj, who) {
     } else if (who === 'worker') {
         if(obj) {
             switch (obj.id) {
-                case 7: number =  10       
+                case 7: number = 10  // Антипин Дмитрий     
                     break
-                case 6: number =  11   
+                case 6: number = 11  // Букша Владимир 
                     break
-                case 9: number = 37
+                case 9: number = 37  // Харин Виктор
                     break
-                case 1: number = 1
+                case 1: number = 1   // Чернецов Михаил
                     break 
-                case null: number = 39
-                    break
-                default: number = 39
+				case 8: number = 17  // Тимофеев Анатолий
+					break
+				case 5: number = 38  // Мкртчян Мартун
+					break
+                case null: number = 39 // Если неизвестно id, то берется профиль "Неизвестный" в Спутник
                     break
             }
             return number

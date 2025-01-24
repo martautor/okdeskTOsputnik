@@ -88,7 +88,6 @@ async function start(firstID, lastID) {
             errorHandler = await getData(i)
             if(errorHandler.errors !== undefined) {
                 logToFile(errorHandler.errors, true)
-                throw createError(400, '[Ошибка1] ' + errorHandler.errors)
             }
             if(bool === false) {
                 data.push(await getData(i))
@@ -143,8 +142,9 @@ const jsonFilePath = path.join(__dirname, 'data/sputnik/successed/nextdata.json'
 app.get('/api/nextdatas', (req, res) => {
     res.sendFile(jsonFilePath)
 })
-
-cron.schedule('59 23 * * *', async function() {
+/*
+	
+cron.schedule('02 * * * *', async function() {
     let fids = ''
     let lids = ''
     await fetch(`${process.env.fullAddress}/api/nextdatas`)
@@ -165,7 +165,30 @@ cron.schedule('59 23 * * *', async function() {
         // .catch(e => {throw createError(400, e.message)})
     }
 	
-    
 	
     
+}); 
+*/
+
+cron.schedule('* * * * *', async function() {
+    let fids = ''
+    let lids = ''
+    await fetch(`${process.env.fullAddress}/api/nextdatas`)
+        .then(res => res.json())
+        .then(data => {
+            fids = data.skipped
+            lids = findMax(data.successed)
+        })
+        .catch(e => error(e.message))
+    console.log('skipped:' + fids + ', successed: ' + lids)
+    
+	logToFile('Начало цикла след. последовательности')
+	await start(lids+1, lids+25)
+	.catch(e => console.log(e.message))
+	logToFile('Начало автоматической выгрузки данных')
+	for (id in fids) {
+        await start(fids[id], fids[id])
+        // .catch(e => {throw createError(400, e.message)})
+    }
 });
+

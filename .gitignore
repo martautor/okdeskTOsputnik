@@ -2,6 +2,7 @@ node_modules
 data/sputnik/logs/*.txt
 data/sputnik/rendered
 data/okdesk/*
+data/sputnik/successed/*
 config
 
 .env.local

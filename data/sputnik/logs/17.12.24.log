@@ -1,0 +1,172 @@
+[23:59:2] - [Инфо] Начало цикла след. последовательности
+[23:59:2] - [Инфо] Developer - Mkrtchyan Martun <mart@kassa26.ru>
+[23:59:3] - Заявка уже была ранее выгружена. (OkDesk ID: 3465), пожалуйста исправьте ошибку[23:59:3] - [Инфо] Сущность с ID: 3466 обработана на сервере.
+[23:59:4] - [Инфо] Сущность с ID: 3467 обработана на сервере.
+[23:59:4] - [Инфо] Отправка данных в Спутник...
+[23:59:4] - [Инфо] task status: success, task time status: success
+[23:59:4] - [Инфо] SputnikTaskID: 34611
+[23:59:4] - [Инфо] Отправка данных в Спутник...
+[23:59:4] - [Инфо] task status: success, task time status: success
+[23:59:4] - [Инфо] SputnikTaskID: 34612
+[23:59:4] - [Инфо] Сущность с ID: 3468 обработана на сервере.
+[23:59:4] - [Инфо] comment id: 174314, task comment status: success
+[23:59:4] - [Инфо] comment id: 174315, task comment status: success
+[23:59:4] - [Инфо] comment id: 174316, task comment status: success
+[23:59:5] - [Инфо] 3469
+[23:59:5] - [Инфо] [LOG] Заявка не является завершенной (OkDesk ID: 3469) Пропуск...
+[23:59:5] - [Инфо] Отправка данных в Спутник...
+[23:59:5] - [Инфо] task status: success, task time status: success
+[23:59:5] - [Инфо] SputnikTaskID: 34613
+[23:59:5] - [Инфо] comment id: 174317, task comment status: success
+[23:59:5] - [Инфо] comment id: 174318, task comment status: success
+[23:59:5] - [Инфо] Сущность с ID: 3470 обработана на сервере.
+[23:59:6] - [Инфо] 3471
+[23:59:6] - [Инфо] [LOG] Заявка не является завершенной (OkDesk ID: 3471) Пропуск...
+[23:59:6] - [Инфо] Сущность с ID: 3472 обработана на сервере.
+[23:59:7] - [Инфо] Сущность с ID: 3473 обработана на сервере.
+[23:59:7] - [Инфо] 3474
+[23:59:7] - [Инфо] [LOG] Заявка не является завершенной (OkDesk ID: 3474) Пропуск...
+[23:59:8] - [Инфо] Сущность с ID: 3475 обработана на сервере.
+[23:59:8] - [Инфо] Сущность с ID: 3476 обработана на сервере.
+[23:59:9] - [Инфо] Сущность с ID: 3477 обработана на сервере.
+[23:59:9] - [Инфо] Сущность с ID: 3478 обработана на сервере.
+[23:59:10] - [Инфо] Сущность с ID: 3479 обработана на сервере.
+[23:59:10] - [Инфо] Сущность с ID: 3480 обработана на сервере.
+[23:59:11] - [Инфо] Сущность с ID: 3481 обработана на сервере.
+[23:59:11] - [Инфо] Сущность с ID: 3482 обработана на сервере.
+[23:59:12] - [Инфо] Сущность с ID: 3483 обработана на сервере.
+[23:59:13] - [Инфо] Сущность с ID: 3484 обработана на сервере.
+[23:59:13] - [Инфо] Сущность с ID: 3485 обработана на сервере.
+[23:59:14] - [Инфо] Сущность с ID: 3486 обработана на сервере.
+[23:59:14] - [Инфо] Сущность с ID: 3487 обработана на сервере.
+[23:59:15] - [Инфо] Сущность с ID: 3488 обработана на сервере.
+[23:59:15] - [Инфо] Сущность с ID: 3489 обработана на сервере.
+[23:59:16] - [Инфо] Сущность с ID: 3490 обработана на сервере.
+[23:59:16] - [Инфо] Начало автоматической выгрузки данных
+[23:59:16] - [Инфо] Developer - Mkrtchyan Martun <mart@kassa26.ru>
+[23:59:16] - [Инфо] [OkDesk] Файл: '2821-2821data.json' - уже существует в 'data/okdesk'
+[23:59:16] - [Инфо] [LOG] Заявка не является завершенной (OkDesk ID: 2821) Пропуск...
+[23:59:16] - [Инфо] Developer - Mkrtchyan Martun <mart@kassa26.ru>
+[23:59:16] - [Инфо] [OkDesk] Файл: '2845-2845data.json' - уже существует в 'data/okdesk'
+[23:59:16] - [Инфо] [LOG] Заявка не является завершенной (OkDesk ID: 2845) Пропуск...
+[23:59:16] - [Инфо] Developer - Mkrtchyan Martun <mart@kassa26.ru>
+[23:59:16] - [Инфо] [OkDesk] Файл: '3022-3022data.json' - уже существует в 'data/okdesk'
+[23:59:17] - [Инфо] [LOG] Заявка не является завершенной (OkDesk ID: 3022) Пропуск...
+[23:59:17] - [Инфо] Developer - Mkrtchyan Martun <mart@kassa26.ru>
+[23:59:17] - [Инфо] [OkDesk] Файл: '3236-3236data.json' - уже существует в 'data/okdesk'
+[23:59:17] - [Инфо] [LOG] Заявка не является завершенной (OkDesk ID: 3236) Пропуск...
+[23:59:17] - [Инфо] Developer - Mkrtchyan Martun <mart@kassa26.ru>
+[23:59:17] - [Инфо] [OkDesk] Файл: '3417-3417data.json' - уже существует в 'data/okdesk'
+[23:59:17] - [Инфо] Сущность с ID: 3417 обработана на сервере.
+[23:59:17] - [Инфо] Developer - Mkrtchyan Martun <mart@kassa26.ru>
+[23:59:17] - [Инфо] [OkDesk] Файл: '3437-3437data.json' - уже существует в 'data/okdesk'
+[23:59:18] - [Инфо] Сущность с ID: 3437 обработана на сервере.
+[23:59:18] - [Инфо] Developer - Mkrtchyan Martun <mart@kassa26.ru>
+[23:59:18] - [Инфо] [OkDesk] Файл: '3449-3449data.json' - уже существует в 'data/okdesk'
+[23:59:18] - [Инфо] [LOG] Заявка не является завершенной (OkDesk ID: 3449) Пропуск...
+[23:59:34] - [Инфо] Отправка данных в Спутник...
+[23:59:34] - [Инфо] task status: success, task time status: success
+[23:59:34] - [Инфо] SputnikTaskID: 34617
+[23:59:34] - [Инфо] Отправка данных в Спутник...
+[23:59:34] - [Инфо] task status: success, task time status: success
+[23:59:34] - [Инфо] SputnikTaskID: 34615
+[23:59:34] - [Инфо] Отправка данных в Спутник...
+[23:59:34] - [Инфо] task status: success, task time status: success
+[23:59:34] - [Инфо] SputnikTaskID: 34618
+[23:59:34] - [Инфо] Отправка данных в Спутник...
+[23:59:34] - [Инфо] task status: success, task time status: success
+[23:59:34] - [Инфо] SputnikTaskID: 34619
+[23:59:34] - [Инфо] Отправка данных в Спутник...
+[23:59:34] - [Инфо] task status: success, task time status: success
+[23:59:34] - [Инфо] SputnikTaskID: 34616
+[23:59:34] - [Инфо] Отправка данных в Спутник...
+[23:59:34] - [Инфо] task status: success, task time status: success
+[23:59:34] - [Инфо] SputnikTaskID: 34620
+[23:59:34] - [Инфо] Отправка данных в Спутник...
+[23:59:34] - [Инфо] task status: success, task time status: success
+[23:59:34] - [Инфо] SputnikTaskID: 34622
+[23:59:34] - [Инфо] Отправка данных в Спутник...
+[23:59:34] - [Инфо] task status: success, task time status: success
+[23:59:34] - [Инфо] SputnikTaskID: 34623
+[23:59:34] - [Инфо] Отправка данных в Спутник...
+[23:59:34] - [Инфо] task status: success, task time status: success
+[23:59:34] - [Инфо] SputnikTaskID: 34614
+[23:59:34] - [Инфо] Отправка данных в Спутник...
+[23:59:34] - [Инфо] task status: success, task time status: success
+[23:59:34] - [Инфо] SputnikTaskID: 34624
+[23:59:34] - [Инфо] Отправка данных в Спутник...
+[23:59:34] - [Инфо] task status: success, task time status: success
+[23:59:34] - [Инфо] SputnikTaskID: 34625
+[23:59:34] - [Инфо] Отправка данных в Спутник...
+[23:59:34] - [Инфо] task status: success, task time status: success
+[23:59:34] - [Инфо] SputnikTaskID: 34627
+[23:59:34] - [Инфо] Отправка данных в Спутник...
+[23:59:34] - [Инфо] task status: success, task time status: success
+[23:59:34] - [Инфо] SputnikTaskID: 34628
+[23:59:34] - [Инфо] Отправка данных в Спутник...
+[23:59:34] - [Инфо] task status: success, task time status: success
+[23:59:34] - [Инфо] SputnikTaskID: 34629
+[23:59:34] - [Инфо] Отправка данных в Спутник...
+[23:59:34] - [Инфо] task status: success, task time status: success
+[23:59:34] - [Инфо] SputnikTaskID: 34621
+[23:59:34] - [Инфо] Отправка данных в Спутник...
+[23:59:34] - [Инфо] task status: success, task time status: success
+[23:59:34] - [Инфо] SputnikTaskID: 34631
+[23:59:34] - [Инфо] Отправка данных в Спутник...
+[23:59:34] - [Инфо] task status: success, task time status: success
+[23:59:34] - [Инфо] SputnikTaskID: 34632
+[23:59:34] - [Инфо] Отправка данных в Спутник...
+[23:59:34] - [Инфо] task status: success, task time status: success
+[23:59:34] - [Инфо] SputnikTaskID: 34633
+[23:59:34] - [Инфо] Отправка данных в Спутник...
+[23:59:34] - [Инфо] task status: success, task time status: success
+[23:59:34] - [Инфо] SputnikTaskID: 34634
+[23:59:34] - [Инфо] Отправка данных в Спутник...
+[23:59:34] - [Инфо] task status: success, task time status: success
+[23:59:34] - [Инфо] SputnikTaskID: 34630
+[23:59:34] - [Инфо] Отправка данных в Спутник...
+[23:59:34] - [Инфо] task status: success, task time status: success
+[23:59:34] - [Инфо] SputnikTaskID: 34626
+[23:59:34] - [Инфо] comment id: 174319, task comment status: success
+[23:59:34] - [Инфо] comment id: 174320, task comment status: success
+[23:59:34] - [Инфо] comment id: 174321, task comment status: success
+[23:59:34] - [Инфо] comment id: 174322, task comment status: success
+[23:59:34] - [Инфо] comment id: 174324, task comment status: success
+[23:59:34] - [Инфо] comment id: 174325, task comment status: success
+[23:59:34] - [Инфо] comment id: 174326, task comment status: success
+[23:59:35] - [Инфо] comment id: 174327, task comment status: success
+[23:59:35] - [Инфо] comment id: 174323, task comment status: success
+[23:59:35] - [Инфо] comment id: 174328, task comment status: success
+[23:59:35] - [Инфо] comment id: 174329, task comment status: success
+[23:59:35] - [Инфо] comment id: 174330, task comment status: success
+[23:59:35] - [Инфо] comment id: 174331, task comment status: success
+[23:59:35] - [Инфо] comment id: 174332, task comment status: success
+[23:59:35] - [Инфо] comment id: 174333, task comment status: success
+[23:59:35] - [Инфо] comment id: 174334, task comment status: success
+[23:59:35] - [Инфо] comment id: 174335, task comment status: success
+[23:59:35] - [Инфо] comment id: 174336, task comment status: success
+[23:59:35] - [Инфо] comment id: 174337, task comment status: success
+[23:59:35] - [Инфо] comment id: 174339, task comment status: success
+[23:59:35] - [Инфо] comment id: 174340, task comment status: success
+[23:59:35] - [Инфо] comment id: 174341, task comment status: success
+[23:59:36] - [Инфо] comment id: 174342, task comment status: success
+[23:59:36] - [Инфо] comment id: 174343, task comment status: success
+[23:59:36] - [Инфо] comment id: 174345, task comment status: success
+[23:59:36] - [Инфо] comment id: 174338, task comment status: success
+[23:59:36] - [Инфо] comment id: 174346, task comment status: success
+[23:59:36] - [Инфо] comment id: 174347, task comment status: success
+[23:59:36] - [Инфо] comment id: 174348, task comment status: success
+[23:59:36] - [Инфо] comment id: 174344, task comment status: success
+[23:59:36] - [Инфо] comment id: 174349, task comment status: success
+[23:59:36] - [Инфо] comment id: 174351, task comment status: success
+[23:59:36] - [Инфо] comment id: 174354, task comment status: success
+[23:59:36] - [Инфо] comment id: 174350, task comment status: success
+[23:59:36] - [Инфо] comment id: 174355, task comment status: success
+[23:59:36] - [Инфо] comment id: 174352, task comment status: success
+[23:59:37] - [Инфо] comment id: 174357, task comment status: success
+[23:59:37] - [Инфо] comment id: 174353, task comment status: success
+[23:59:37] - [Инфо] comment id: 174358, task comment status: success
+[23:59:37] - [Инфо] comment id: 174356, task comment status: success
+[23:59:37] - [Инфо] comment id: 174359, task comment status: success
+[23:59:37] - [Инфо] comment id: 174360, task comment status: success
+[23:59:37] - [Инфо] comment id: 174361, task comment status: success
